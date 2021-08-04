@@ -1,7 +1,68 @@
-.banner .nav li {
-  @extend .nav-item;
-}
+header.banner {
+  position: absolute;
+  width: 100%;
 
-.banner .nav a {
-  @extend .nav-link;
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+    .left {
+      width: 44%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 70px;
+
+      a {
+        font-family: "BuxomD", sans-serif;
+        font-size: 35px;
+        color: #000;
+        transition: all 0.2s ease-out;
+        margin-right: 12px;
+
+        &:hover {
+          color: #5eeb5b;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .center {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top: 10px;
+
+      svg {
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    .right {
+      width: 44%;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin-top: 70px;
+
+      a {
+        font-family: "BuxomD", sans-serif;
+        font-size: 35px;
+        color: #000;
+        transition: all 0.2s ease-out;
+        margin-left: 32px;
+
+        &:hover {
+          color: #5eeb5b;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
