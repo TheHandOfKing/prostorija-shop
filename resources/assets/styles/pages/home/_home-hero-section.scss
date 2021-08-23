@@ -1,4 +1,61 @@
 .home-hero-section {
-  height: 800px;
-  background-color: white;
+  height: 900px;
+  background-image: url("../images/homepage/homepage-hero-background.svg");
+  background-position: center top;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 270px;
+    width: 795px;
+
+    h1 {
+      font-family: "Chromeo", sans-serif;
+      font-size: 120px;
+      color: gray;
+    }
+
+    .category-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+
+      .cat-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        .cat-name {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 150px;
+          }
+
+          span {
+            font-family: "BuxomD", sans-serif;
+            font-size: 30px;
+            color: #000;
+          }
+
+          &:hover {
+            text-decoration: none;
+
+            span {
+              color: #5eeb5b;;
+            }
+          }
+        }
+      }
+    }
+  }
 }

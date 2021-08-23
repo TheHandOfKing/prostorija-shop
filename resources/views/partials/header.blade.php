@@ -5,7 +5,6 @@
       <a href="">Shop</a>
       <a href="">Contact</a>
       <a href="">Blog</a>
-      <a href="">ToS</a>
       <a href="">O Nama</a>
     </div>
     <div class="center">
@@ -30,8 +29,8 @@
       </a>
     </div>
     <div class="right">
-      <a href="">Sing Up</a>
-      <a href="">Log In</a>
+      <a href="">Napravi nalog</a>
+      <a href="">Uloguj se</a>
     </div>
   </div>
 </header>
