@@ -1,5 +1,4 @@
 .home-hero-section {
-  height: 900px;
   background-image: url("../images/homepage/homepage-hero-background.svg");
   background-position: center top;
   background-size: 100%;
@@ -17,7 +16,8 @@
     h1 {
       font-family: "Chromeo", sans-serif;
       font-size: 120px;
-      color: gray;
+      line-height: 180px;
+      color: #000;
     }
 
     .category-holder {
@@ -44,6 +44,7 @@
           span {
             font-family: "BuxomD", sans-serif;
             font-size: 30px;
+            line-height: 45px;
             color: #000;
           }
 
@@ -51,7 +52,69 @@
             text-decoration: none;
 
             span {
-              color: #5eeb5b;;
+              color: #5eeb5b;
+              ;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .home-hero-section {
+    background-size: cover;
+
+    .content {
+      width: 90%;
+      padding-top: 150px;
+
+      h1 {
+        font-size: 12vw;
+        line-height: 18vw;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .home-hero-section {
+    .content {
+      .category-holder {
+        flex-direction: row;
+        margin-top: 25px;
+
+        .cat-row {
+          flex-direction: column;
+
+          .cat-name {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-hero-section {
+    .content {
+      .category-holder {
+        .cat-row {
+          margin-bottom: 0;
+
+          .cat-name {
+            margin-bottom: 15px;
+
+            img {
+              width: 100px;
+            }
+
+            span {
+              font-size: 16px;
+              line-height: 24px;
             }
           }
         }
