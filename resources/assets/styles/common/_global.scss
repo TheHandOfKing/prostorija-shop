@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: "BuxomD";
+  font-weight: bold;
+  src: url("../fonts/BuxomD.ttf");
+}
+
+@font-face {
+  font-family: "Cockpit";
+  font-weight: bold;
+  src: url("../fonts/Cockpit.ttf");
+}
+
+@font-face {
+  font-family: "Chromeo";
+  font-weight: bold;
+  src: url("../fonts/Chromeo.ttf");
+  
+.text-light {
+  color: $letter-color-white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-dark {
+  color: $primary-color;
+  font-size: 16px;
+  line-height: 24px;
+}

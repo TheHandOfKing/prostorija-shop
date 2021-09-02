@@ -1,7 +1,123 @@
-.banner .nav li {
-  @extend .nav-item;
+.banner {
+  position: absolute;
+  width: 100%;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+    .left {
+      width: 44%;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      margin-top: 70px;
+
+      a {
+        font-family: "Chromeo", sans-serif;
+        font-size: 50px;
+        color: #000;
+        transition: all 0.2s ease-out;
+        margin-right: 12px;
+
+        &:hover {
+          color: #5eeb5b;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .center {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top: 10px;
+
+      svg {
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    .right {
+      width: 44%;
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      margin-top: 70px;
+
+      a {
+        font-family: "Chromeo", sans-serif;
+        font-size: 55px;
+        color: #000;
+        transition: all 0.2s ease-out;
+        margin-left: 32px;
+
+        &:hover {
+          color: #5eeb5b;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .content-mobile {
+    display: none;
+  }
 }
 
-.banner .nav a {
-  @extend .nav-link;
+@media screen and (max-width: 1654px) {
+  .banner {
+    .content {
+      .left {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1492px) {
+  .banner {
+    .content {
+      .right {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .banner {
+    .content {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    .content {
+      display: none;
+    }
+
+    .content-mobile {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      margin: auto;
+
+      a {
+        margin-top: 30px;
+      }
+
+      .burger {
+        margin-top: 45.5px;
+      }
+    }
+  }
 }
