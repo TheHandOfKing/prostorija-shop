@@ -16,6 +16,36 @@
     display: none;
     opacity: 0;
     border-top: 2px solid $secondary-color;
+
+    a {
+      font-family: $secondary-font;
+      font-size: 20px;
+      color: #fff;
+      transition: all 0.2s ease-out;
+      margin-right: 12px;
+
+      &:hover {
+        color: #5eeb5b;
+        text-decoration: none;
+      }
+    }
+
+    .regular-menu {
+      width: 100%;
+
+      #menu-header-1 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        li::marker {
+          content: '';
+        }
+      }
+    }
   }
 
   .content {
@@ -31,8 +61,19 @@
       justify-content: flex-end;
       align-items: center;
 
+      #menu-header {
+        text-decoration: none;
+        padding: 0;
+        display: flex;
+        margin: 0;
+
+        li::marker {
+          content: '';
+        }
+      }
+
       a {
-        font-family: $primary-font;
+        font-family: $secondary-font;
         font-size: 20px;
         color: #fff;
         transition: all 0.2s ease-out;
@@ -68,7 +109,7 @@
       align-items: center;
 
       a {
-        font-family: $primary-font;
+        font-family: $secondary-font;
         font-size: 20px;
         color: #fff;
         transition: all 0.2s ease-out;
