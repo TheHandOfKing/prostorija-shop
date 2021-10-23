@@ -16,6 +16,8 @@
     display: none;
     opacity: 0;
     border-top: 2px solid $secondary-color;
+    flex-direction: column;
+    padding: 0 30px;
 
     a {
       font-family: $secondary-font;
@@ -137,6 +139,64 @@
 }
 
 @media screen and (max-width: 896px) {
+  .banner .menu-holder-phone {
+    .socials {
+      margin-top: 40px;
+
+      .socials-holder {
+        margin-bottom: 40px;
+      }
+
+      .svg-holder {
+        margin-top: 20px;
+      }
+
+      .circle {
+        margin: 0 15px;
+        height: 45px;
+        width: 45px;
+        border-radius: 100px;
+        border: 1px solid $secondary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s all ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $secondary-color;
+
+          svg {
+            path {
+              fill: $primary-color;
+            }
+          }
+        }
+      }
+    }
+
+    .regular-menu #menu-header-1 { 
+      .current-menu-item {
+        a {
+          color: $secondary-color;
+        }
+      }
+  
+      li {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+        border-bottom: 1px solid $secondary-color;
+        padding-bottom: 10px;
+        transition: 0.3s all ease;
+  
+        &:hover {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+
   .banner {
     padding: 0 20px;
 

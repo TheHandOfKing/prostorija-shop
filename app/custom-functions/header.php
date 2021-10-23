@@ -1,6 +1,6 @@
 <?php
 //Site logo
-function skydan_logo_setup()
+function prostorija_logo_setup()
 {
   $defaults = array(
     'height'      => 100,
@@ -11,7 +11,7 @@ function skydan_logo_setup()
   );
   add_theme_support('custom-logo', $defaults);
 }
-add_action('after_setup_theme', 'skydan_logo_setup');
+add_action('after_setup_theme', 'prostorija_logo_setup');
 
 // Menu in header
 function regular_menu()
