@@ -1,0 +1,89 @@
+.page-template-template-login {
+  .login-page {
+    display: flex;
+    background: #787878;
+    max-height: 1000px;
+
+    label {
+      color: #fff;
+      font-family: $primary-font;
+    }
+
+    h2,
+    p {
+      font-family: $secondary-font;
+      color: #fff;
+    }
+
+    a {
+      color: #fff;
+    }
+
+    .text-left {
+      background: #0C0B08;
+      border: 2px solid #62AB37;
+      padding: 30px;
+    }
+
+    .left-content {
+      padding: 150px;
+
+      form {
+        padding: 10px;
+      }
+    }
+
+    .left-content,
+    .right-content {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .page-template-template-login .login-page .left-content {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .page-template-template-login .login-page .left-content {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .page-template-template-login .login-page .left-content {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .page-template-template-login .login-page {
+    flex-direction: column;
+
+    .left-content,
+    .right-content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .page-template-template-login .login-page h2 {
+    font-size: 24px;
+  }
+
+  .page-template-template-login .login-page label, p {
+    font-size: 14px;
+  }
+
+  .page-template-template-login .login-page .text-left {
+    padding: 10px;
+  }
+
+  .page-template-template-login .login-page .text-left button {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}

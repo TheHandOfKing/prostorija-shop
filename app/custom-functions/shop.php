@@ -25,15 +25,15 @@ function list_categories() {
         echo '<br /><a href="'. get_term_link($cat->slug, 'product_cat') .'">'. $cat->name .'</a>';
 
         $args2 = array(
-                'taxonomy'     => $taxonomy,
-                'child_of'     => 0,
-                'parent'       => $category_id,
-                'orderby'      => $orderby,
-                'show_count'   => $show_count,
-                'pad_counts'   => $pad_counts,
-                'hierarchical' => $hierarchical,
-                'title_li'     => $title,
-                'hide_empty'   => $empty
+            'taxonomy'     => $taxonomy,
+            'child_of'     => 0,
+            'parent'       => $category_id,
+            'orderby'      => $orderby,
+            'show_count'   => $show_count,
+            'pad_counts'   => $pad_counts,
+            'hierarchical' => $hierarchical,
+            'title_li'     => $title,
+            'hide_empty'   => $empty
         );
         $sub_cats = get_categories( $args2 );
         if($sub_cats) {

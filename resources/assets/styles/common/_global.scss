@@ -57,3 +57,49 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  .woocommerce-form-row, .form-row {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-family: $primary-font;
+      border-bottom: 1px solid #62AB37;
+      padding: 10px 0;
+      margin-bottom: 15px;
+      width: fit-content;
+    }
+
+    input {
+      padding: 10px;
+      border: 2px solid #0C0B08;
+      background: #fff;
+      font-family: $secondary-font;
+      color: #0C0B08;
+      border-radius: 0;
+    }
+  }
+}
+
+button {
+  width: 100%;
+  border: 2px solid #62AB37;
+  background: #0C0B08;
+  color: #fff;
+  font-family: $secondary-font;
+  padding: 15px;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: 0.3s all ease;
+  font-size: 18px;
+
+  &:hover {
+    border: 2px solid #0C0B08;
+    background: #62AB37;
+    color: #0C0B08;
+  }
+}

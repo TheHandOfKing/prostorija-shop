@@ -1,0 +1,85 @@
+.page-template-template-register {
+  .register-page {
+    display: flex;
+    background: #787878;
+    max-height: 1000px;
+
+    label {
+      color: #fff;
+      font-family: $primary-font;
+    }
+
+    h2,
+    p {
+      font-family: $secondary-font;
+      color: #fff;
+    }
+
+    .register-holder {
+      background: #0C0B08;
+      border: 2px solid #62AB37;
+      padding: 30px;
+    }
+
+    .content-left {
+      padding: 150px;
+
+      form {
+        padding: 10px;
+      }
+    }
+
+    .content-left,
+    .content-right {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .page-template-template-register .register-page .content-left {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .page-template-template-register .register-page .content-left {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .page-template-template-register .register-page .content-left {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 896px) {
+  .page-template-template-register .register-page {
+    flex-direction: column;
+
+    .content-left,
+    .content-right {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .page-template-template-register .register-page h2 {
+    font-size: 24px;
+  }
+
+  .page-template-template-register .register-page label, p {
+    font-size: 14px;
+  }
+
+  .page-template-template-register .register-page .register-holder {
+    padding: 10px;
+  }
+
+  .page-template-template-register .register-page .register-holder button {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
