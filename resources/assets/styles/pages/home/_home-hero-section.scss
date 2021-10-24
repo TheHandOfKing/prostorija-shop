@@ -14,9 +14,80 @@
 
     .left {
       display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 50%;
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 70%;
+
+        h2 {
+          font-family: $primary-font;
+          font-size: 50px;
+          line-height: 75px;
+          color: #fff;
+        }
+
+        p {
+          font-family: $secondary-font;
+          font-size: 32px;
+          line-height: 48px;
+          color: #fff;
+        }
+      }
+
+      .button {
+        width: 70%;
+        height: 65px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #62AB37;
+        background: #0C0B08;
+        color: #fff;
+        font-family: 'Glego';
+        font-size: 18px;
+        padding: 15px;
+        font-weight: 700;
+        border-radius: 4px;
+        transition: 0.3s;
+        margin-top: 50px;
+
+        &:hover {
+          text-decoration: none;
+          color: #0C0B08;
+          border: 2px solid #0C0B08;
+          background: #62AB37;
+        }
+      }
+
+      .decor-holder {
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+
+        .bottom-decor {
+          width: 66%;
+          height: auto;
+          margin-top: 30px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
       justify-content: center;
       align-items: center;
       width: 50%;
+      position: relative;
 
       .video-content {
         display: flex;
@@ -44,36 +115,6 @@
         video {
           width: 384px;
           z-index: 2;
-        }
-      }
-    }
-
-    .right {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      width: 50%;
-      position: relative;
-
-      .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 70%;
-
-        h2 {
-          font-family: $primary-font;
-          font-size: 50px;
-          line-height: 75px;
-          color: #fff;
-        }
-
-        p {
-          font-family: $secondary-font;
-          font-size: 32px;
-          line-height: 48px;
-          color: #fff;
         }
       }
 
