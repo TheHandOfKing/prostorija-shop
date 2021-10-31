@@ -25,8 +25,13 @@
     </div>
 
     <div class="right">
-      <a href="/log-in">Napravi nalog</a>
-      <a href="/register">Uloguj se</a>
+      @if (!is_user_logged_in())
+        <a href="/log-in">Napravi nalog</a>
+        <a href="/register">Uloguj se</a>
+      @else
+        <a href="{{ get_site_url() }}/my-account">Account</a>
+        <a href="{{ get_site_url() }}/?customer-logout=true">Logout</a>
+      @endif
     </div>
   </div>
   <div class="content-mobile">
@@ -74,8 +79,13 @@
         </div>
       </div>
       <div class="svg-holder d-flex justify-content-center">
+      @if (!is_user_logged_in())
         <a href="/log-in">Napravi nalog</a>&nbsp;&nbsp;&nbsp;
         <a href="/register">Uloguj se</a>
+      @else
+        <a href="{{ get_site_url() }}/my-account">Account</a>&nbsp;&nbsp;&nbsp;
+        <a href="{{ get_site_url() }}/?customer-logout=true">Logout</a>
+      @endif
       </div>
     </div>
 </div>

@@ -1,0 +1,22 @@
+.my-account {
+  .woocommerce {
+    display: flex;
+
+    nav {
+      width: 30%;
+      float: none !important;
+      height: 100vh;
+      border-right: 2px solid $primary-color;
+      background: $secondary-color;
+
+      ul {
+        list-style-type: none;
+      }
+    }
+
+    .woocommerce-MyAccount-content {
+      width: 70%;
+      float: none !important;
+    }
+  }
+}
