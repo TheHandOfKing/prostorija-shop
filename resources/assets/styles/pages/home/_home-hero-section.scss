@@ -73,9 +73,9 @@
         justify-content: flex-end;
 
         .bottom-decor {
-          width: 66%;
+          width: 95%;
           height: auto;
-          margin-top: 30px;
+          margin-top: 50px;
           margin-left: auto;
           margin-right: auto;
         }
@@ -98,16 +98,16 @@
 
         .background-rose-1 {
           position: absolute;
-          right: -40px;
-          top: -35px;
+          right: -50px;
+          top: -55px;
           width: 100px;
           height: auto;
         }
 
         .background-rose-2 {
           position: absolute;
-          left: -40px;
-          bottom: -35px;
+          left: -50px;
+          bottom: -55px;
           width: 100px;
           height: auto;
         }
@@ -186,62 +186,175 @@
   //     }
   //   }
   // }
+
+  // Ovo je responsive 
+
+  // @media screen and (max-width: 1024px) {
+  //   .home-hero-section {
+  //     background-size: cover;
+
+  //     .content {
+  //       width: 90%;
+  //       padding-top: 150px;
+
+  //       h1 {
+  //         font-size: 12vw;
+  //         line-height: 18vw;
+  //         margin-bottom: 0;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // @media screen and (max-width: 650px) {
+  //   .home-hero-section {
+  //     .content {
+  //       .category-holder {
+  //         flex-direction: row;
+  //         margin-top: 25px;
+
+  //         .cat-row {
+  //           flex-direction: column;
+
+  //           .cat-name {
+  //             margin-bottom: 25px;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  // @media screen and (max-width: 500px) {
+  //   .home-hero-section {
+  //     .content {
+  //       .category-holder {
+  //         .cat-row {
+  //           margin-bottom: 0;
+
+  //           .cat-name {
+  //             margin-bottom: 15px;
+
+  //             img {
+  //               width: 100px;
+  //             }
+
+  //             span {
+  //               font-size: 16px;
+  //               line-height: 24px;
+  //             }
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   .home-hero-section {
-    background-size: cover;
-
     .content {
-      width: 90%;
-      padding-top: 150px;
+      width: 95%;
 
-      h1 {
-        font-size: 12vw;
-        line-height: 18vw;
-        margin-bottom: 0;
+      .left {
+        align-items: center;
       }
     }
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1020px) {
+  .home-hero-section {
+    padding: 50px 0;
+
+    .content {
+      flex-direction: column-reverse;
+
+      .left {
+        width: 100%;
+        margin-top: 50px;
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
   .home-hero-section {
     .content {
-      .category-holder {
-        flex-direction: row;
-        margin-top: 25px;
+      width: 100%;
 
-        .cat-row {
-          flex-direction: column;
+      .left {
+        .text {
+          width: 90%;
+        }
 
-          .cat-name {
-            margin-bottom: 25px;
+        .button {
+          width: 90%;
+        }
+
+        .decor-holder {
+          width: 90%;
+
+          .bottom-decor {
+            width: 100%;
           }
+        }
+      }
+
+      .right {
+        width: 100%;
+
+        .background-angel {
+          display: none;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   .home-hero-section {
+    padding-bottom: 30px;
+    padding-top: 50px;
+
     .content {
-      .category-holder {
-        .cat-row {
-          margin-bottom: 0;
+      .left {
+        .text {
+          h2 {
+            font-size: 30px;
+            line-height: 45px;
+          }
 
-          .cat-name {
-            margin-bottom: 15px;
+          p {
+            font-size: 22px;
+            line-height: 33px;
+          }
+        }
 
-            img {
-              width: 100px;
-            }
+        .button {
+          width: 90%;
+          margin-top: 30px;
+        }
+      }
 
-            span {
-              font-size: 16px;
-              line-height: 24px;
-            }
+      .right {
+        .video-content {
+          width: 90%;
+
+          .background-rose-1 {
+            display: none;
+          }
+
+          .background-rose-2 {
+            display: none;
+          }
+
+          video {
+            width: 90%;
           }
         }
       }
