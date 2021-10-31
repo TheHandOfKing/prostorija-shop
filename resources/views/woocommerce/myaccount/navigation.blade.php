@@ -30,6 +30,10 @@ do_action( 'woocommerce_before_account_navigation' );
 			</li>
 		<?php endforeach; ?>
 	</ul>
+
+	<div class="arrow">
+		asdasd
+	</div>
 </nav>
 
 <?php do_action( 'woocommerce_after_account_navigation' ); ?>
