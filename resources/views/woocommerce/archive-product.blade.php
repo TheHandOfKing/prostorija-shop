@@ -3,6 +3,11 @@
 --}}
 @extends('layouts.app')
 @section('content')
+{{-- <div class="sidebar">
+  @php
+  do_action( 'woocommerce_sidebar' );
+  @endphp
+</div> --}}
 <section class="shop-wrapper">
   @php
   /**
@@ -31,9 +36,53 @@
    */
   
   @endphp
-  
   @if( woocommerce_product_loop() )
-    @php
+  <div class="content">
+    <h1>Prostorija shop</h1>
+    <div class="category-holder">
+      <div class="cat-row">
+        <a href="" class="cat-name">
+          <div class="cat-image polo">
+            {{-- displays image --}}
+          </div>
+          <span>Polo</span>
+        </a>
+        <a href="" class="cat-name">
+          <div class="cat-image headwear">
+            {{-- displays image --}}
+          </div>
+          <span>Headwear</span>
+        </a>
+        <a href="" class="cat-name">
+          <div class="cat-image shirts">
+            {{-- displays image --}}
+          </div>
+          <span>Shirts</span>
+        </a>
+      </div>
+      <div class="cat-row">
+        <a href="" class="cat-name">
+          <div class="cat-image hoodie">
+            {{-- displays image --}}
+          </div>
+          <span>Hoodie</span>
+        </a>
+        <a href="" class="cat-name">
+          <div class="cat-image lmtd">
+            {{-- displays image --}}
+          </div>
+          <span>LMTD</span>
+        </a>
+        <a href="" class="cat-name">
+          <div class="cat-image merch">
+            {{-- displays image --}}
+          </div>
+          <span>Merch</span>
+        </a>
+      </div>
+    </div>
+  </div>
+    {{-- @php
     /**
      * Hook: woocommerce_before_shop_loop.
      *
@@ -69,7 +118,7 @@
      * @hooked woocommerce_pagination - 10
      */
     do_action( 'woocommerce_after_shop_loop' );
-    @endphp
+    @endphp --}}
   @else
     @php
     /**
@@ -94,10 +143,5 @@
    * @hooked woocommerce_get_sidebar - 10
    */
   @endphp
-  <div class="sidebar">
-    @php
-    do_action( 'woocommerce_sidebar' );
-    @endphp
-  </div>
 </section>
 @endsection

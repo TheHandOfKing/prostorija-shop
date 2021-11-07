@@ -1,8 +1,9 @@
 .home-hero-section {
   background-color: #024F12;
-  background-image: linear-gradient(to bottom left, #024F12, #00851b);
-  background-position: center top;
-  background-size: 100%;
+  // background-image: linear-gradient(to bottom left, #024F12, #00851b);
+  background-image: url("../images/homepage/hero-background.png");
+  // background-position: center top;
+  // background-size: 100%;
   display: flex;
   justify-content: center;
   padding: 70px 0;

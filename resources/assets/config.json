@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/prostorija-shop",
-  "devUrl": "http://localhost/wordpress/prostorija-shop",
+  "devUrl": "http://localhost/prostorija-shop",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
