@@ -1,0 +1,72 @@
+.separator {
+  background-image: url("../images/homepage/background-net.svg");
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  hr {
+    border: 1px solid #fff;
+    align-self: flex-start;
+    width: 77%;
+    position: relative;
+    top: 5px;
+  }
+}
+
+.home-merch1-section {
+  height: 800px;
+  background-image: url("../images/homepage/merch1-section-background.jpg");
+  background-size: 100%;
+  background-position: center top;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 10%;
+
+    h2 {
+      font-family: $primary-font;
+      font-size: 50px;
+      line-height: 75px;
+      color: #fff;
+    }
+
+    p {
+      font-family: $secondary-font;
+      font-size: 32px;
+      line-height: 48px;
+      color: #fff;
+    }
+
+    a {
+      height: 65px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #62AB37;
+      background: #0C0B08;
+      color: #fff;
+      font-family: 'Glego';
+      font-size: 18px;
+      padding: 15px;
+      font-weight: 700;
+      border-radius: 4px;
+      transition: 0.3s;
+      margin-top: 50px;
+
+      &:hover {
+        text-decoration: none;
+        color: #0C0B08;
+        border: 2px solid #0C0B08;
+        background: #62AB37;
+      }
+    }
+  }
+}
