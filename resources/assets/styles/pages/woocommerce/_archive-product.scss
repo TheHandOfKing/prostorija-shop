@@ -2,15 +2,41 @@
   .wrap {
     .content {
       .main {
-        .sidenar {
-          #sidebar {
-            // tralala
-          }
-        }
+        position: relative;
+
+        // .sidebar {
+        //   #sidebar {
+        //     ul {
+        //       position: absolute;
+        //       left: 50%;
+        //       transform: translate(-50%, 0);
+        //       top: 0;
+        //       list-style-type: none;
+
+        //       li {
+        //         form {
+        //           label {
+        //             .search-field {
+        //               width: 500px;
+        //             }
+        //           }
+        //         }
+        //       }
+        //     }
+
+        //     ul[role="navigation"] {
+        //       display: none;
+        //     }
+        //   }
+        // }
+
         .shop-wrapper {
           display: flex;
           justify-content: center;
           align-items: center;
+          background-color: #024F12;
+          // background-image: linear-gradient(to bottom left, #024F12, #00851b);
+          background-image: url("../images/homepage/hero-background.png");
 
           .content {
             display: flex;
@@ -24,7 +50,7 @@
               font-family: $primary-font;
               font-size: 104px;
               line-height: 180px;
-              color: #000;
+              color: rgb(173, 173, 173);
             }
 
             .category-holder {
@@ -47,7 +73,7 @@
                   .cat-image {
                     width: 253px;
                     height: 316px;
-                    background-image: url("../images/shop/category-default.png");
+                    background-image: url("../images/shop/category-default.svg");
                     background-size: 120px 178px;
                     background-position: 50% 50%;
                     background-repeat: no-repeat;
@@ -55,15 +81,15 @@
 
                   .polo {
                     &:hover {
-                      background-image: url("../images/shop/category-polo.png");
-                      background-size: 143px 249px;
-                      background-position: 47.273% 103%;
+                      background-image: url("../images/shop/category-polo.svg");
+                      background-size: 120px 208.95px;
+                      background-position: 50.273% 64%;
                     }
                   }
 
                   .headwear {
                     &:hover {
-                      background-image: url("../images/shop/category-headwear.png");
+                      background-image: url("../images/shop/category-headwear.svg");
                       background-size: 140px 228px;
                       background-position: 50% 22%;
                     }
@@ -71,7 +97,7 @@
 
                   .shirts {
                     &:hover {
-                      background-image: url("../images/shop/category-default.png");
+                      background-image: url("../images/shop/category-default.svg");
                     }
                   }
 
@@ -85,13 +111,13 @@
 
                   .lmtd {
                     &:hover {
-                      background-image: url("../images/shop/category-lmtd.png");
+                      background-image: url("../images/shop/category-lmtd.svg");
                     }
                   }
 
                   .merch {
                     &:hover {
-                      background-image: url("../images/shop/category-merch.png");
+                      background-image: url("../images/shop/category-merch.svg");
                     }
                   }
 
@@ -99,7 +125,7 @@
                     font-family: $secondary-font;
                     font-size: 30px;
                     line-height: 45px;
-                    color: #000;
+                    color: rgb(173, 173, 173);
                   }
 
                   &:hover {
