@@ -4,32 +4,6 @@
       .main {
         position: relative;
 
-        // .sidebar {
-        //   #sidebar {
-        //     ul {
-        //       position: absolute;
-        //       left: 50%;
-        //       transform: translate(-50%, 0);
-        //       top: 0;
-        //       list-style-type: none;
-
-        //       li {
-        //         form {
-        //           label {
-        //             .search-field {
-        //               width: 500px;
-        //             }
-        //           }
-        //         }
-        //       }
-        //     }
-
-        //     ul[role="navigation"] {
-        //       display: none;
-        //     }
-        //   }
-        // }
-
         .shop-wrapper {
           display: flex;
           justify-content: center;
@@ -54,13 +28,13 @@
 
               .search-field {
                 // border: 2px solid #62AB37;
-                border-right: none;
+                border: none;
                 border-radius: 4px 0 0 4px;
                 padding: 15px;
                 font-family: 'Glego';
                 background: #fff;
                 color: #0C0B08;
-                width: 680px;
+                width: 600px;
                 height: 61px;
                 outline: none;
               }
@@ -77,6 +51,16 @@
                 border-radius: 0 4px 4px 0;
                 transition: 0.3s;
                 width: 20%;
+
+                &:hover {
+                  text-decoration: none;
+                  color: #0C0B08;
+                  background: #62AB37;
+                }
+
+                &:focus {
+                  outline: none;
+                }
               }
             }
 
@@ -193,14 +177,14 @@
               padding-top: 70px;
               width: 100%;
 
-              .search-form {
+              .woocommerce-product-search {
                 width: 90%;
 
-                label {
+                .search-field {
                   width: 80%;
                 }
 
-                .search-submit {
+                button {
                   width: 20%;
                 }
               }
