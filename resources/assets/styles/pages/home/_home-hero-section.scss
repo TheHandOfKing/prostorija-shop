@@ -8,6 +8,7 @@
   justify-content: center;
   padding: 70px 0;
   border-bottom: 20px groove $secondary-color;
+  overflow-x: hidden;
 
   .content {
     display: flex;
@@ -128,128 +129,6 @@
       }
     }
   }
-
-
-  // Ovo treba da ide na shop/categories stranicu
-
-  // .content {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: flex-start;
-  //   padding-top: 70px;
-  //   width: 795px;
-
-  //   h1 {
-  //     font-family: "Chromeo", sans-serif;
-  //     font-size: 120px;
-  //     line-height: 180px;
-  //     color: #000;
-  //   }
-
-  //   .category-holder {
-  //     display: flex;
-  //     flex-direction: column;
-  //     justify-content: space-between;
-  //     width: 100%;
-
-  //     .cat-row {
-  //       width: 100%;
-  //       display: flex;
-  //       justify-content: space-between;
-  //       margin-bottom: 35px;
-
-  //       .cat-name {
-  //         display: flex;
-  //         flex-direction: column;
-  //         align-items: center;
-
-  //         img {
-  //           width: 150px;
-  //         }
-
-  //         span {
-  //           font-family: "BuxomD", sans-serif;
-  //           font-size: 30px;
-  //           line-height: 45px;
-  //           color: #000;
-  //         }
-
-  //         &:hover {
-  //           text-decoration: none;
-
-  //           span {
-  //             color: #5eeb5b;
-  //             ;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  // Ovo je responsive 
-
-  // @media screen and (max-width: 1024px) {
-  //   .home-hero-section {
-  //     background-size: cover;
-
-  //     .content {
-  //       width: 90%;
-  //       padding-top: 150px;
-
-  //       h1 {
-  //         font-size: 12vw;
-  //         line-height: 18vw;
-  //         margin-bottom: 0;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @media screen and (max-width: 650px) {
-  //   .home-hero-section {
-  //     .content {
-  //       .category-holder {
-  //         flex-direction: row;
-  //         margin-top: 25px;
-
-  //         .cat-row {
-  //           flex-direction: column;
-
-  //           .cat-name {
-  //             margin-bottom: 25px;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-
-  // @media screen and (max-width: 500px) {
-  //   .home-hero-section {
-  //     .content {
-  //       .category-holder {
-  //         .cat-row {
-  //           margin-bottom: 0;
-
-  //           .cat-name {
-  //             margin-bottom: 15px;
-
-  //             img {
-  //               width: 100px;
-  //             }
-
-  //             span {
-  //               font-size: 16px;
-  //               line-height: 24px;
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 @media screen and (max-width: 1440px) {

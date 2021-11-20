@@ -39,7 +39,7 @@
   @if( woocommerce_product_loop() )
   <div class="content">
     @php
-    get_search_form();
+    get_product_search_form();
     @endphp
     <h1>Prostorija shop</h1>
     <div class="category-holder">
