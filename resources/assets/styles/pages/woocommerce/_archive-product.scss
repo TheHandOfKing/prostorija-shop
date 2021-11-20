@@ -193,37 +193,37 @@
               justify-content: flex-start;
               padding-top: 70px;
               width: 100%;
-  
+
               .search-form {
                 width: 90%;
 
                 label {
                   width: 80%;
                 }
-  
+
                 .search-submit {
                   width: 20%;
                 }
               }
-  
+
               h1 {
                 font-family: $primary-font;
                 font-size: 12vw;
                 line-height: 18vh;
               }
-  
+
               .category-holder {
                 flex-direction: row;
                 width: 90%;
-  
+
                 .cat-row {
                   flex-direction: column;
-  
+
                   .cat-name {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-  
+
                     .cat-image {
                       width: 253px;
                       height: 316px;
@@ -232,59 +232,47 @@
                       background-position: 50% 50%;
                       background-repeat: no-repeat;
                     }
-  
+
                     .polo {
-                      &:hover {
-                        background-image: url("../images/shop/category-polo.svg");
-                        background-size: 120px 208.95px;
-                        background-position: 50.273% 64%;
-                      }
+                      background-image: url("../images/shop/category-polo.svg");
+                      background-size: 120px 208.95px;
+                      background-position: 50.273% 64%;
                     }
-  
+
                     .headwear {
-                      &:hover {
-                        background-image: url("../images/shop/category-headwear.svg");
-                        background-size: 140px 228px;
-                        background-position: 50% 22%;
-                      }
+                      background-image: url("../images/shop/category-headwear.svg");
+                      background-size: 140px 228px;
+                      background-position: 50% 22%;
                     }
-  
+
                     .shirts {
-                      &:hover {
-                        background-image: url("../images/shop/category-default.svg");
-                      }
+                      background-image: url("../images/shop/category-default.svg");
                     }
-  
+
                     .hoodie {
-                      &:hover {
-                        background-image: url("../images/shop/category-hoodie.png");
-                        background-size: 247px 308px;
-                        background-position: 60% 40%;
-                      }
+                      background-image: url("../images/shop/category-hoodie.png");
+                      background-size: 247px 308px;
+                      background-position: 60% 40%;
                     }
-  
+
                     .lmtd {
-                      &:hover {
-                        background-image: url("../images/shop/category-lmtd.svg");
-                      }
+                      background-image: url("../images/shop/category-lmtd.svg");
                     }
-  
+
                     .merch {
-                      &:hover {
-                        background-image: url("../images/shop/category-merch.svg");
-                      }
+                      background-image: url("../images/shop/category-merch.svg");
                     }
-  
+
                     span {
                       font-family: $secondary-font;
                       font-size: 30px;
                       line-height: 45px;
                       color: rgb(173, 173, 173);
                     }
-  
+
                     &:hover {
                       text-decoration: none;
-  
+
                       span {
                         color: #5eeb5b;
                       }
