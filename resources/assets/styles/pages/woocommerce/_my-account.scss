@@ -9,13 +9,17 @@
       svg {
         width: 50px;
         height: 50px;
+        transition: 0.3s all ease;
       }
+    }
+
+    .woocommerce-MyAccount-content {
+      padding: 40px;
     }
 
     nav {
       width: 30%;
       float: none !important;
-      height: fit-content;
       border-right: 2px solid $primary-color;
       background: $secondary-color;
       display: flex;
@@ -34,6 +38,7 @@
             color: white;
             background: $primary-color;
             padding: 30px;
+            transition: 0.3s all ease;
           }
         }
 
@@ -44,6 +49,11 @@
           padding: 30px;
           display: flex;
           font-family: $primary-font;
+
+          span {
+            transition: 0.3s all ease;
+            padding-left: 20px;
+          }
 
           &:hover {
             color: white;
