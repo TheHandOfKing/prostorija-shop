@@ -1,0 +1,47 @@
+.home-about-section {
+  background-color: #FFF9EF;
+  background-image: url("../images/homepage/about-background.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 400px;
+  height: 500px;
+  padding-left: 4%;
+  padding-right: 4%;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+
+    h2 {
+      font-family: $heading-font;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 207%;
+      text-align: center;
+      color: #141414;
+
+      @media (max-width: 600px) {
+        font-size: 32px;
+        line-height: 49px;
+      }
+    }
+
+    a {
+      background: #363636;
+      border-radius: 8px;
+      font-family: $button-font;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      padding: 16px 59px;
+    }
+  }
+}

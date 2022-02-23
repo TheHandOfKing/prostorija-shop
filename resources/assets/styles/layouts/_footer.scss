@@ -5,6 +5,8 @@
   align-items: center;
   padding-top: 267.69px;
   padding-bottom: 111px;
+  position: relative;
+  overflow: hidden;
 
   @media (width: 5120px) and (height: 2160px) {
     padding-top: 514px !important;
@@ -152,5 +154,11 @@
         }
       }
     }
+  }
+
+  .footer-prostorija {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
   }
 }
