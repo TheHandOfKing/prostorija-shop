@@ -6,6 +6,46 @@
   padding-top: 267.69px;
   padding-bottom: 111px;
 
+  @media (width: 5120px) and (height: 2160px) {
+    padding-top: 514px !important;
+    padding-bottom: 132px !important;
+  }
+
+  @media (width: 5120px) and (height: 1440px) {
+    padding-top: 514px !important;
+    padding-bottom: 132px !important;
+  }
+
+  @media (width: 3840px) and (height: 1600px) {
+    padding-top: 429px !important;
+    padding-bottom: 132px !important;
+  }
+
+  @media (width: 3840px) and (height: 1200px) {
+    padding-top: 429px !important;
+    padding-bottom: 132px !important;
+  }
+
+  @media (width: 3840px) and (height: 1080px) {
+    padding-top: 429px !important;
+    padding-bottom: 132px !important;
+  }
+
+  @media (width: 3440px) and (height: 1440px) {
+    padding-top: 362px !important;
+    padding-bottom: 106px !important;
+  }
+
+  @media (width: 2560px) and (height: 1600px) {
+    padding-top: 284px !important;
+    padding-bottom: 82px !important;
+  }
+
+  @media (width: 2560px) and (height: 1080px) {
+    padding-top: 299px !important;
+    padding-bottom: 106px !important;
+  }
+
   @media (min-width: 1921px) {
     background-size: 100%;
     padding-top: 20vh;
