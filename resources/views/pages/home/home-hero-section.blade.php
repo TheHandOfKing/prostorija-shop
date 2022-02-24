@@ -1,5 +1,5 @@
-<section class="home-hero-section">
-  <div class="content">
+{{-- <section class="home-hero-section"> --}}
+  {{-- <div class="content">
     <div class="left">
       <div class="text">
         <h2>Lorem Ipsum</h2>
@@ -337,7 +337,7 @@
           fill="black" />
       </svg>
     </div>
-  </div>
+  </div> --}}
 
   {{-- Ovo treba da ide na shop/categories stranicu --}}
 
@@ -376,4 +376,4 @@
   </div> --}}
 
 
-</section>
+{{-- </section> --}}
