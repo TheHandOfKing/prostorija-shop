@@ -497,5 +497,7 @@
       </a>
     </div>
   </div>
-  <img class="footer-prostorija" src="@asset('images/footer/footer-prostorija.svg')" alt="Prostorija">
+  <div class="footer-prostorija">
+    <img src="@asset('images/footer/footer-prostorija.svg')" alt="Prostorija">
+  </div>
 </footer>
