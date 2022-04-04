@@ -1,0 +1,84 @@
+.home-first-section {
+  background-image: url("../images/homepage/home-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrap {
+    width: 1440px !important;
+    margin-top: -130px;
+    max-width: 1440px !important;
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      .left-numbers {
+        display: flex;
+        max-height: 230px;
+        min-width: 70px;
+        justify-content: space-between;
+
+        .numbers {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .number {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            opacity: 0.6;
+            cursor: pointer;
+          }
+
+          .active {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            opacity: 1;
+          }
+        }
+
+        .line-holder {
+          position: relative;
+
+          .main-line {
+            background-color: #c4c4c4;
+            height: 219px;
+            width: 1px;
+            display: flex;
+            position: relative;
+          }
+  
+          .followup-line {
+            background-color: #fff;
+            height: 50px;
+            width: 2px;
+            display: flex;
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+    }
+
+    .right {
+      .image {
+        img {
+          width: 705px;
+          height: 742px;
+        }
+      }
+    }
+  }
+}
