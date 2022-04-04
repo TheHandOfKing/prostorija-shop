@@ -19,7 +19,7 @@
     </svg>
     <div class="menu">
       <a href="">home</a>
-      <a href="">shop</a>
+      <a href="prostorija-shop/shop">shop</a>
       <a href="">contact</a>
       <a href="">blog</a>
       <a href="">tos</a>

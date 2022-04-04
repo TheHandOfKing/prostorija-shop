@@ -22,21 +22,62 @@
             font-weight: 800;
             font-size: 40px;
             line-height: 83px;
-            color: #FFF9EF;
             z-index: 5;
+            background-image: url("../images/shop/shop-top.png");
+            text-align: center;
+            padding-top: 77px;
+            padding-bottom: 163px;
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            @media (min-width: 1921px) {
+              background-size: 100%;
+            }
+
+            span {
+              background-image: url("../images/shop/heading-bg.png");
+              background-position: center;
+              width: 280px;
+              height: 143px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #141414;
+            }
           }
 
           .content {
             position: relative;
             width: 100%;
-            height: 900px;
-            top: 100px;
+            height: 1147px;
+            top: 220px;
+
+            @media (max-width: 880px) {
+              height: 2066px;
+            }
 
             .category-holder {
               position: absolute;
               background-image: url("../images/shop/shop-net.svg");
-              height: 1100px;
+              height: 100%;
               width: 100%;
+              padding-top: 100px;
+
+              @media (min-width: 1921px) {
+                width: 1920px;
+                border-left: solid 3px #000;
+                border-right: solid 3px #000;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+
+              @media (max-width: 880px) {
+                display: flex;
+                flex-direction: column;
+              }
 
               .cat-name {
                 display: flex;
@@ -44,6 +85,10 @@
                 align-items: center;
                 width: 253px;
                 position: absolute;
+
+                @media (max-width: 880px) {
+                  position: static;
+                }
 
                 .cat-image {
                   width: 253px;
@@ -118,33 +163,96 @@
               }
 
               .cat-name:nth-child(1) {
-                top: 486px;
-                left: 78px;
+                top: 602px;
+                left: 339px;
+
+                @media (max-width: 1520px) {
+                  left: 80px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-start;
+                }
               }
 
               .cat-name:nth-child(2) {
                 top: 65px;
                 left: 719px;
+
+                @media (max-width: 1400px) {
+                  left: 571px;
+                }
+
+                @media (max-width: 1100px) {
+                  left: 383px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-end;
+                }
               }
 
               .cat-name:nth-child(3) {
-                top: 605px;
-                left: 495px;
+                top: 435px;
+                left: 847px;
+
+                @media (max-width: 1520px) {
+                  top: 507px;
+                  left: 639px;
+                }
+
+                @media (max-width: 1400px) {
+                  left: 485px;
+                }
+
+                @media (max-width: 1100px) {
+                  left: 376px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-start;
+                }
               }
 
               .cat-name:nth-child(4) {
-                top: 547px;
-                left: 1091px;
+                top: 712px;
+                left: 1270px;
+
+                @media (max-width: 1520px) {
+                  left: auto;
+                  right: 30px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-end;
+                }
               }
 
               .cat-name:nth-child(5) {
-                top: 375px;
-                left: 1458px;
+                top: 104px;
+                left: 1210px;
+
+                @media (max-width: 1520px) {
+                  left: auto;
+                  right: 50px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-start;
+                }
               }
 
               .cat-name:nth-child(6) {
                 top: 157px;
                 left: 150px;
+
+                @media (max-width: 1520px) {
+                  left: 30px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-end;
+                }
               }
             }
           }

@@ -37,8 +37,7 @@
 
   @endphp
   @if( woocommerce_product_loop() )
-  <img class="shop-top" src="@asset('images/shop/shop-top.png')" alt="Shop Top">
-  <h1 class="shop-title">Shop</h1>
+  <h1 class="shop-title"><span>SHOP</span></h1>
   <div class="content">
     <div class="category-holder">
       <a href="" class="cat-name">
