@@ -130,8 +130,33 @@
                 }
 
                 .lmtd {
+                  background-image: none;
+                  position: relative;
+
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s all ease;
+                    z-index: 10;
+                    width: 120px;
+                  }
+
+                  .active {
+                    opacity: 0;
+                    z-index: 11;
+                  }
+
+
                   &:hover {
-                    background-image: url("../images/shop/category-lmtd.svg");
+                    img {
+                      width: 145px;
+                    }
+
+                    .active {
+                      opacity: 1;
+                    }
                   }
                 }
 
@@ -141,23 +166,42 @@
                   }
                 }
 
-                span {
-                  font-family: $heading-font;
-                  font-style: normal;
-                  font-weight: 800;
-                  font-size: 30px;
-                  line-height: 45px;
-                  color: rgb(173, 173, 173);
-                  background-color: #FFFffF;
-                  border-radius: 20px;
-                  padding: 15px;
+                .category-text {
+                  position: relative;
+                  height: 120px;
+                  width: 320px;
+                  // display: none;
+
+                  img {
+                    position: absolute;
+                  }
+
+                  .left {
+                    z-index: 10;
+                  }
+
+                  .right {
+                    z-index: 11;
+                  }
+
+                  span {
+                    font-family: $heading-font;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 30px;
+                    line-height: 45px;
+                    color: #141414;
+                    border-radius: 20px;
+                    padding: 15px;
+                    z-index: 12;
+                  }
                 }
 
                 &:hover {
                   text-decoration: none;
 
-                  span {
-                    color: #000;
+                  .category-text  {
+                    display: block;
                   }
                 }
               }
