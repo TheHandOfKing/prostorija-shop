@@ -46,35 +46,43 @@
         </div>
         <span>Polo</span>
       </a>
+
       <a href="" class="cat-name">
         <div class="cat-image headwear">
           {{-- displays image --}}
         </div>
         <span>Headwear</span>
       </a>
+
       <a href="" class="cat-name">
         <div class="cat-image shirts">
-          {{-- displays image --}}
+          <img class="default" src="@asset('images/shop/category-default.svg')" alt="Category">
         </div>
-        <span>Shirts</span>
+        <div class="category-text">
+          <span>SHIRTS</span>
+          <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
+          <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
+        </div>
       </a>
+
       <a href="" class="cat-name">
         <div class="cat-image hoodie">
-          {{-- displays image --}}
         </div>
         <span>Hoodie</span>
       </a>
+
       <a href="" class="cat-name">
         <div class="cat-image lmtd">
           <img class="default" src="@asset('images/shop/category-default.svg')" alt="Category">
           <img class="active" src="@asset('images/shop/category-lmtd.svg')" alt="LMTD">
         </div>
         <div class="category-text">
+          <span>LMTD</span>
           <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
           <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
-          <span>LMTD</span>
         </div>
       </a>
+
       <a href="" class="cat-name">
         <div class="cat-image merch">
           {{-- displays image --}}

@@ -72,6 +72,14 @@
     }
 
     .logo {
+      svg {
+        transition: all 0.5s ease-in;
+
+        &:hover {
+          transform: rotate(720deg);
+        }
+      }
+
       @media (min-width: 1921px) {
         width: 11vw;
         height: 11vh;
@@ -100,6 +108,41 @@
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
+        transition: margin .25s;
+        margin: 0 var(--spacing, 0px);
+        position: relative;
+
+        svg {
+          --text: #2B3044;
+          --line: #fff;
+          --line-active: #fff;
+          opacity: 0;
+          width: 76px;
+          height: 40px;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 7px) translateZ(0);
+          fill: none;
+          stroke: var(--stroke, var(--line));
+          stroke-linecap: round;
+          stroke-width: 2px;
+          stroke-dasharray: var(--offset, 69px) 278px;
+          stroke-dashoffset: 361px;
+          transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+        }
+
+        &:hover {
+          --spacing: 4px;
+          --stroke: var(--line-active);
+          --stroke-delay: .1s;
+          --offset: 180px;
+          text-decoration: none;
+
+          svg {
+            opacity: 1;
+          }
+        }
 
         @media (min-width: 1921px) {
           background-size: 100%;
@@ -108,29 +151,31 @@
       }
     }
 
-    .mobile {
-      display: none;
+    // Unused line separators 
 
-      @media (max-width: 600px) {
-        display: block;
-      }
+    // .mobile {
+    //   display: none;
 
-      @media (max-width: 340px) {
-        width: 250px;
-        height: 2px;
-      }
-    }
+    //   @media (max-width: 600px) {
+    //     display: block;
+    //   }
 
-    .desktop {
-      @media (min-width: 1921px) {
-        width: 25vw;
-        height: 1vh;
-      }
+    //   @media (max-width: 340px) {
+    //     width: 250px;
+    //     height: 2px;
+    //   }
+    // }
 
-      @media (max-width: 600px) {
-        display: none;
-      }
-    }
+    // .desktop {
+    //   @media (min-width: 1921px) {
+    //     width: 25vw;
+    //     height: 1vh;
+    //   }
+
+    //   @media (max-width: 600px) {
+    //     display: none;
+    //   }
+    // }
 
     .socials {
       display: flex;
@@ -191,6 +236,7 @@
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
       }
+
       to {
         -ms-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
