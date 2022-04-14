@@ -4,13 +4,13 @@
       <div class="left-numbers">
         <div class="line-holder">
           <span class="main-line"></span>
-          <span class="followup-line"></span>
+          <span class="followup-line" id="line-to-move"></span>
         </div>
 
         <div class="numbers">
-          <span class="number active">01</span>
-          <span class="number">02</span>
-          <span class="number">03</span>
+          <span class="number active" aria-value="0">01</span>
+          <span class="number" aria-value="1">02</span>
+          <span class="number" aria-value="2">03</span>
         </div>
       </div>
       <div class="right-desc">
@@ -20,6 +20,16 @@
           ex ea commodo consequat.</p>
   
         <a href="#">Check It</a>
+
+        <div class="reel-line">
+          <div class="image-wrapper">
+            <div class="images">
+              <img src="@asset('images/homepage/reel-1.png')" alt="">
+              <img src="@asset('images/homepage/reel-2.png')" alt="">
+              <img src="@asset('images/homepage/reel-3.png')" alt="">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="right">
