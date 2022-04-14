@@ -1,0 +1,42 @@
+.error404 {
+  background-image: url("../images/404/background.png");
+  .wrap {
+    .content {
+      .main {
+        .holder-404 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          padding-top: 200px;
+        
+          p {
+            font-family: "Inter Regular", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+          }
+        
+          a {
+            font-family: "Inter Medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #FFFFFF;
+            border-radius: 8px;
+            width: 197px;
+            height: 54px;
+          }
+        }
+      }
+    }
+  }
+}

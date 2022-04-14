@@ -1,12 +1,16 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
-
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
+<div class="holder-404">
+  <img src="@asset('images/404/404.svg')" alt="404">
+  <p>
+    Sorry, we were unable to find that page
+  </p>
+  <p>
+    Go Back
+  </p>
+  <a href="{{get_site_url()}}">
+    Home
+  </a>
+</div>
 @endsection
