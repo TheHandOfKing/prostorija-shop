@@ -1,0 +1,108 @@
+.default-template {
+  background-color: #FFF9EF;
+  // background-image: url("../images/homepage/slide-background.png");
+
+  .page-header {
+    background-image: url("../images/default/header-background.png");
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 495px;
+    padding-top: 100px;
+
+    @media (max-width: 600px) {
+      height: 295px;
+      background-position: center center;
+    }
+
+    h1 {
+      background-image: url("../images/default/tape.png");
+      width: 694px;
+      font-family: "Inter Extra-Bold", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 83px;
+      color: #141414;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 133px;
+
+      @media (max-width: 600px) {
+        width: 100%;
+        background-position: center;
+      }
+
+      @media (max-width: 360px) {
+        font-size: 30px;
+        line-height: 60px;
+      }
+    }
+  }
+
+  .content-page {
+    display: flex;
+    justify-content: center;
+    padding: 0 4%;
+
+    .content-holder {
+      display: block;
+      max-width: 1200px;
+
+      h2 {
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 83px;
+        color: #2E2E2D;
+      }
+
+      h3 {
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 64px;
+        color: #2E2E2D;
+      }
+
+      h4 {
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 56px;
+        color: #2E2E2D;
+      }
+
+      h5 {
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 48px;
+        color: #2E2E2D;
+      }
+
+      h6 {
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 40px;
+        color: #2E2E2D;
+      }
+
+      p {
+        font-family: "Inter Light", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2E2E2D;
+      }
+    }
+  }
+}
