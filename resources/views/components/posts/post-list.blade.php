@@ -2,6 +2,6 @@
 
 <ul class="post-list">
   @foreach ($posts as $post)
-    @component('components.blog.posts.single-post', ['post' => $post]) @endcomponent
+    @component('components.posts.single-post', ['post' => $post]) @endcomponent
   @endforeach
 </ul>
