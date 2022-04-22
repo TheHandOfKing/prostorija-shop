@@ -1,5 +1,4 @@
 {{-- Single post article on Blog page (not Single Page Post) --}}
-
 <div href="{{ get_permalink($post->ID) }}" class="single-post">
   <div class="post-text">
     <h2>
@@ -17,7 +16,7 @@
       @php echo Posts::getExcerptForPostContent($post->post_content, 150) @endphp
     </p>
     <div class="bottom-button">
-      <a href="">Read more</a>
+      <a href="{{$post->link}}">Read more</a>
       {{-- <svg class="line" width="401" height="2" viewBox="0 0 401 2" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 1L401 1.00004" stroke="#525252" />
       </svg> --}}
