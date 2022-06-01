@@ -100,18 +100,42 @@
                 }
 
                 .polo {
-                  &:hover {
-                    background-image: url("../images/shop/category-polo.svg");
-                    background-size: 120px 208.95px;
-                    background-position: 50.273% 64%;
+                  background-image: none;
+                  position: relative;
+
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s all ease;
+                    z-index: 10;
+                    width: 120px;
+                  }
+
+                  .active {
+                    opacity: 0;
+                    z-index: 11;
                   }
                 }
 
                 .headwear {
-                  &:hover {
-                    background-image: url("../images/shop/category-headwear.svg");
-                    background-size: 140px 228px;
-                    background-position: 50% 22%;
+                  background-image: none;
+                  position: relative;
+
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s all ease;
+                    z-index: 10;
+                    width: 120px;
+                  }
+
+                  .active {
+                    opacity: 0;
+                    z-index: 11;
                   }
                 }
 
@@ -131,10 +155,22 @@
                 }
 
                 .hoodie {
-                  &:hover {
-                    background-image: url("../images/shop/category-hoodie.png");
-                    background-size: 247px 308px;
-                    background-position: 60% 40%;
+                  background-image: none;
+                  position: relative;
+
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s all ease;
+                    z-index: 10;
+                    width: 120px;
+                  }
+
+                  .active {
+                    opacity: 0;
+                    z-index: 11;
                   }
                 }
 
@@ -161,6 +197,26 @@
                 .merch {
                   &:hover {
                     background-image: url("../images/shop/category-merch.svg");
+                  }
+                }
+
+                .accs {
+                  background-image: none;
+                  position: relative;
+
+                  img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: 0.3s all ease;
+                    z-index: 10;
+                    width: 120px;
+                  }
+
+                  .active {
+                    opacity: 0;
+                    z-index: 11;
                   }
                 }
 
@@ -229,6 +285,36 @@
                     }
                   }
 
+                  .hoodie {
+                    .active {
+                      opacity: 1;
+                      width: 190px;
+                      top: 54%;
+                      left: 53%;
+                    }
+                  }
+
+                  .headwear {
+                    .active {
+                      opacity: 1;
+                      width: 275px;
+                      top: 38%;
+                      left: 51.5%;
+                    }
+
+                    .default {
+                      width: 125px;
+                    }
+                  }
+
+                  .polo {
+                    .active {
+                      opacity: 1;
+                      top: 56%;
+                      // left: 51.5%;
+                    }
+                  }
+
                   .category-text  {
                     display: flex;
 
@@ -282,7 +368,7 @@
 
               .cat-name:nth-child(3) {
                 top: 435px;
-                left: 847px;
+                left: 1054px;
 
                 @media (max-width: 1520px) {
                   top: 507px;
@@ -340,6 +426,19 @@
 
                 @media (max-width: 880px) {
                   align-self: flex-end;
+                }
+              }
+
+              .cat-name:nth-child(7) {
+                top: 374px;
+                left: 656px;
+
+                @media (max-width: 1520px) {
+                  left: 30px;
+                }
+
+                @media (max-width: 880px) {
+                  align-self: flex-start;
                 }
               }
             }

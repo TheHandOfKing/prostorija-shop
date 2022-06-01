@@ -42,16 +42,26 @@
     <div class="category-holder">
       <a href="" class="cat-name">
         <div class="cat-image polo">
-          {{-- displays image --}}
+          <img class="default" src="@asset('images/shop/category-default.svg')" alt="Category">
+          <img class="active" src="@asset('images/shop/category-polo.svg')" alt="Hoodie">
         </div>
-        <span>Polo</span>
+        <div class="category-text">
+          <span>POLO</span>
+          <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
+          <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
+        </div>
       </a>
 
       <a href="" class="cat-name">
         <div class="cat-image headwear">
-          {{-- displays image --}}
+          <img class="default" src="@asset('images/shop/category-default.svg')" alt="Category">
+          <img class="active" src="@asset('images/shop/category-headwear.svg')" alt="Hoodie">
         </div>
-        <span>Headwear</span>
+        <div class="category-text">
+          <span>HEADWEAR</span>
+          <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
+          <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
+        </div>
       </a>
 
       <a href="" class="cat-name">
@@ -67,8 +77,14 @@
 
       <a href="" class="cat-name">
         <div class="cat-image hoodie">
+          <img class="default" src="@asset('images/shop/category-default.svg')" alt="Category">
+          <img class="active" src="@asset('images/shop/category-hoodie.svg')" alt="Hoodie">
         </div>
-        <span>Hoodie</span>
+        <div class="category-text">
+          <span>HOODIE</span>
+          <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
+          <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
+        </div>
       </a>
 
       <a href="" class="cat-name">
@@ -88,6 +104,18 @@
           {{-- displays image --}}
         </div>
         <span>Merch</span>
+      </a>
+
+      <a href="" class="cat-name">
+        <div class="cat-image accs">
+          <img class="default" src="@asset('images/shop/category-accessories.svg')" alt="Category">
+          {{-- <img class="active" src="@asset('images/shop/category-lmtd.svg')" alt="ACCESSORIES"> --}}
+        </div>
+        <div class="category-text">
+          <span>ACCESSORIES</span>
+          <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
+          <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
+        </div>
       </a>
     </div>
   </div>
