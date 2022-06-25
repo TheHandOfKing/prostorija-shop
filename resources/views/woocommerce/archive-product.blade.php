@@ -101,15 +101,20 @@
 
       <a href="" class="cat-name">
         <div class="cat-image merch">
-          {{-- displays image --}}
+          <img class="default" src="@asset('images/shop/category-default.svg')" alt="Category">
+          <img class="active" src="@asset('images/shop/category-merch.svg')" alt="LMTD">
         </div>
-        <span>Merch</span>
+        <div class="category-text">
+          <span>LMTD</span>
+          <img class="left" src="@asset('images/shop/cat-name-left.png')" alt="Tape">
+          <img class="right" src="@asset('images/shop/cat-name-right.png')" alt="Tape">
+        </div>
       </a>
 
       <a href="" class="cat-name">
         <div class="cat-image accs">
           <img class="default" src="@asset('images/shop/category-accessories.svg')" alt="Category">
-          {{-- <img class="active" src="@asset('images/shop/category-lmtd.svg')" alt="ACCESSORIES"> --}}
+          <img class="active" src="@asset('images/shop/category-accessories-broken.svg')" alt="ACCESSORIES">
         </div>
         <div class="category-text">
           <span>ACCESSORIES</span>
