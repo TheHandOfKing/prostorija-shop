@@ -1,0 +1,44 @@
+.onama-text-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .text {
+    max-width: 540px;
+    width: 94%;
+
+    @media (max-width: 1292px) {
+      padding-bottom: 30px;
+    }
+
+    h3 {
+      font-family: "Inter Extra-Bold", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 83px;
+      color: #141414;
+    }
+
+    p {
+      font-family: "Inter Light", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      color: #2B2A29;
+      opacity: 0.6;
+
+      @media (max-width: 600px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  img {
+    max-width: 753px;
+    width: 80%;
+  }
+}
