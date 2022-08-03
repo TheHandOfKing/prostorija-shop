@@ -1,3 +1,138 @@
 .onama-slide-section {
-  color: aqua;
+  .carousel {
+    margin-bottom: -600px;
+
+    @media (max-width: 1420px) {
+      margin-bottom: -400px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: -131px;
+    }
+
+    .carousel-inner {
+      .carousel-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+
+        img {
+          width: 100%;
+
+          @media (max-width: 1040px) {
+            width: 1300px;
+          }
+
+          @media (max-width: 600px) {
+            width: 800px;
+          }
+        }
+
+        .text {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(15%, -90%);
+          width: 465px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          @media (max-width: 1420px) {
+            transform: translate(-50%, -50%);
+          }
+
+          @media (max-width: 600px) {
+            width: 94%;
+          }
+
+          h3 {
+            font-family: "Inter Extra-Bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 83px;
+            color: #F6F6F6;
+            background-image: url("../images/onama/slide-tape.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 262px;
+            height: 134px;
+          }
+
+          p {
+            font-family: "Inter Light", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            padding-left: 60px;
+            color: #F6F6F6;
+            opacity: 0.6;
+
+            @media (max-width: 600px) {
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      opacity: 1;
+
+      @media (max-width: 600px) {
+        top: auto;
+        bottom: -30px;
+        width: 60%;
+      }
+
+      .carousel-control-prev-icon {
+        background-image: url("../images/onama/left-arrow.svg");
+        width: 66px;
+        height: 61px;
+      }
+    }
+
+    .carousel-control-next {
+      opacity: 1;
+
+      @media (max-width: 600px) {
+        top: auto;
+        bottom: -30px;
+        width: 60%;
+      }
+
+      .carousel-control-next-icon {
+        background-image: url("../images/onama/right-arrow.svg");
+        width: 66px;
+        height: 61px;
+        opacity: 1;
+      }
+    }
+  }
+
+  .arrow-holder {
+    display: none;
+
+    @media (max-width: 600px) {
+      display: block;
+      width: 100%;
+      margin-bottom: -500px;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: -200px;
+    }
+  }
 }
+
+// Delete white space from page bottom
+
+// .page-template-template-onama {
+//   overflow: hidden;
+// }
