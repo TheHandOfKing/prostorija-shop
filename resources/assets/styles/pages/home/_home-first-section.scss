@@ -63,13 +63,25 @@
           position: relative;
 
           .image-wrapper {
-            width: 507px;
+            min-width: 507px;
             right: -40px;
             position: relative;
 
-            .images img {
-              width: 149px;
-              cursor: pointer;
+            .images {
+              .active-image {
+                height: 155px;
+                width: 173px;
+                border: 1px solid #FFF9EF;
+                padding: 7px;
+              }
+
+              img {
+                width: 149px;
+                margin-left: 5px;
+                margin-right: 5px;
+                transition: 0.3s all ease;
+                cursor: pointer;
+              }
             }
           }
         }
@@ -118,7 +130,7 @@
             display: flex;
             position: relative;
           }
-  
+
           .followup-line {
             background-color: #fff;
             height: 50px;

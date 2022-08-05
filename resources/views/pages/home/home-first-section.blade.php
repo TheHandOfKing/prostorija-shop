@@ -15,18 +15,18 @@
       </div>
       <div class="right-desc">
         <h1>-Just <br>Prostorija</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
           ex ea commodo consequat.</p>
-  
+
         <a href="#">Check It</a>
 
         <div class="reel-line">
           <div class="image-wrapper">
             <div class="images">
-              <img src="@asset('images/homepage/reel-1.png')" alt="">
-              <img src="@asset('images/homepage/reel-2.png')" alt="">
-              <img src="@asset('images/homepage/reel-3.png')" alt="">
+              <img src="@asset('images/homepage/reel-2.png')" alt="" aria-value="0" class="images-select active-image">
+              <img src="@asset('images/homepage/reel-2.png')" alt="" aria-value="1" class="images-select">
+              <img src="@asset('images/homepage/reel-3.png')" alt="" aria-value="2" class="images-select">
             </div>
           </div>
         </div>
