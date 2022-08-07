@@ -31,6 +31,41 @@ export default {
         }
       })
     }
+
+    // Homepage Slider
+
+    let prevButton = document.getElementById('prev-button');
+    let nextButton = document.getElementById('next-button');
+    let slider1 = document.getElementById('slider1');
+    let slider2 = document.getElementById('slider2');
+
+    console.log(prevButton);
+
+    prevButton.addEventListener('click', () => {
+      if(slider2.classList.contains('back')) {
+        slider1.classList.add('back')
+        slider2.classList.remove('back')
+      }
+      else {
+        slider2.classList.add('back')
+        slider1.classList.remove('back')
+      }
+    })
+
+    nextButton.addEventListener('click', () => {
+      if(slider2.classList.contains('back')) {
+        slider1.classList.add('back')
+        slider2.classList.remove('back')
+      }
+      else {
+        slider2.classList.add('back')
+        slider1.classList.remove('back')
+      }
+    })
+
+    // NFT Slider
+
+    
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS

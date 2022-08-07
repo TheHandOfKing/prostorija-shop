@@ -16,7 +16,85 @@
     .slide-row {
       display: flex;
       justify-content: center;
+      align-items: center;
       column-gap: 119px;
+
+      .slide-holder {
+        position: relative;
+        width: 740px;
+        height: 730px;
+
+        .slider-photo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          z-index: 2;
+          transition: all 1s ease;
+
+          &.back {
+            transform: translate(-50%,-50%) rotate(-13.05deg) scale(0.85);
+            z-index: 1;
+            left: 40%;
+            top: 45%;
+          }
+        }
+
+        .nft-photo {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          z-index: 2;
+          transition: all 1s ease;
+
+          &.back {
+            transform: translate(-50%,-50%) scale(0.85);
+            z-index: 1;
+            left: 60%;
+            top: 45%;
+          }
+        }
+
+        .decor {
+          position: absolute;
+          z-index: 2;
+
+          &.heart-left {
+            left: 5%;
+            bottom: 20%;
+          }
+
+          &.heart-right {
+            right: 9%;
+            bottom: 36%;
+          }
+
+          &.tape-left {
+            left: 3%;
+            bottom: -2%;
+          }
+
+          &.tape-right {
+            right: 10%;
+            bottom: -4%;
+          }
+        }
+
+        .slider-navigation {
+          position: absolute;
+          top: 50%;
+          cursor: pointer;
+
+          &.previous {
+            left: 0;
+          }
+
+          &.next {
+            right: 0;
+          }
+        }
+      }
 
       .text-holder {
         display: flex;
