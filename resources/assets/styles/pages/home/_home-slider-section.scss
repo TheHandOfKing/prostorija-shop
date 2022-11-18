@@ -5,6 +5,16 @@
   background-repeat: no-repeat;
   padding-top: 38px;
   padding-bottom: 250px;
+  overflow-x: hidden;
+
+  @media (max-width: 1345px) {
+    background-size: 100% 100%;
+    padding-top: 166px;
+  }
+
+  @media (max-width: 800px) {
+    padding-bottom: 100px;
+  }
 
   .content {
     display: flex;
@@ -12,17 +22,39 @@
     align-items: center;
     row-gap: 131px;
     max-width: 1508px;
+    width: 94%;
+
+    @media (max-width: 1345px) {
+      row-gap: 30px;
+    }
 
     .slide-row {
       display: flex;
       justify-content: center;
       align-items: center;
       column-gap: 119px;
+      flex-wrap: wrap;
+
+      @media (max-width: 1345px) {
+        flex-direction: column;
+      }
 
       .slide-holder {
         position: relative;
         width: 740px;
         height: 730px;
+
+        @media (max-width: 800px) {
+          transform: scale(0.6);
+        }
+
+        @media (max-width: 475px) {
+          transform: scale(0.45);
+        }
+
+        @media (max-width: 340px) {
+          transform: scale(0.4);
+        }
 
         .slider-photo {
           position: absolute;
@@ -42,7 +74,7 @@
 
         .nft-photo {
           position: absolute;
-          left: 50%;
+          left: 47%;
           top: 50%;
           transform: translate(-50%,-50%);
           z-index: 2;
@@ -51,8 +83,8 @@
           &.back {
             transform: translate(-50%,-50%) scale(0.85);
             z-index: 1;
-            left: 60%;
-            top: 45%;
+            left: 63%;
+            top: 50%;
           }
         }
 
@@ -85,6 +117,7 @@
           position: absolute;
           top: 50%;
           cursor: pointer;
+          z-index: 100;
 
           &.previous {
             left: 0;
@@ -100,6 +133,16 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
+        @media (max-width: 800px) {
+          margin-bottom: -100px;
+          width: 100vw;
+          align-items: center;
+        }
+
+        @media (max-width: 475px) {
+          margin-bottom: -160px;
+        }
 
         h2 {
           font-family: $heading-font;
@@ -119,6 +162,10 @@
           color: #F6F6F6;
           opacity: 0.6;
           width: 403px;
+
+          @media (max-width: 800px) {
+            width: 94%;
+          }
         }
 
         a {
@@ -132,6 +179,22 @@
           color: #363636;
           padding: 16px 59px;
           width: 197.25px;
+        }
+      }
+
+      &:first-of-type {
+        .slide-holder {
+          @media (max-width: 1345px) {
+            order: 2;
+          }
+
+          @media (max-width: 800px) {
+            margin-bottom: -100px;
+          }
+
+          @media (max-width: 475px) {
+            margin-bottom: -180px;
+          }
         }
       }
     }

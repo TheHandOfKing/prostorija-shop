@@ -13,4 +13,7 @@
     Home
   </a>
 </div>
+<div class="logo-prostorija">
+  <img src="@asset('images/404/logo.svg')" alt="Prostorija">
+</div>
 @endsection

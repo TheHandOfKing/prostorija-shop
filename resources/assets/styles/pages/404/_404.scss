@@ -1,5 +1,7 @@
 .error404 {
   background-image: url("../images/404/background.png");
+  position: relative;
+
   .wrap {
     .content {
       .main {
@@ -10,7 +12,7 @@
           justify-content: center;
           gap: 20px;
           padding-top: 200px;
-        
+
           p {
             font-family: "Inter Regular", sans-serif;
             font-style: normal;
@@ -19,7 +21,7 @@
             line-height: 22px;
             color: #FFFFFF;
           }
-        
+
           a {
             font-family: "Inter Medium", sans-serif;
             font-style: normal;
@@ -34,6 +36,47 @@
             border-radius: 8px;
             width: 197px;
             height: 54px;
+          }
+        }
+
+        .logo-prostorija {
+          position: absolute;
+          left: 0;
+          top: 0;
+          // overflow: hidden;
+          z-index: 100;
+
+          @media (max-width: 1300px) {
+            width: 28%;
+          }
+
+          @media (max-width: 800px) {
+            display: none;
+          }
+
+          @keyframes rotating {
+            from {
+              -ms-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -webkit-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+            }
+
+            to {
+              -ms-transform: rotate(360deg);
+              -moz-transform: rotate(360deg);
+              -webkit-transform: rotate(360deg);
+              -o-transform: rotate(360deg);
+              transform: rotate(360deg);
+            }
+          }
+
+          img {
+            position: relative;
+            left: -342px;
+            top: 18px;
+            animation: rotating 40s linear infinite;
           }
         }
       }
