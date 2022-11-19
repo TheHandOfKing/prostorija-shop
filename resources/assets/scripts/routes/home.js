@@ -74,8 +74,6 @@ export default {
     let slider1 = document.getElementById('slider1');
     let slider2 = document.getElementById('slider2');
 
-    console.log(prevButton);
-
     prevButton.addEventListener('click', () => {
       if(slider2.classList.contains('back')) {
         slider1.classList.add('back')
@@ -100,6 +98,32 @@ export default {
 
     // NFT Slider
 
+    let prevNft = document.getElementById('prev-nft');
+    let nextNft = document.getElementById('next-nft');
+    let nft1 = document.getElementById('nft1');
+    let nft2 = document.getElementById('nft2');
+
+    prevNft.addEventListener('click', () => {
+      if(nft2.classList.contains('back')) {
+        nft1.classList.add('back')
+        nft2.classList.remove('back')
+      }
+      else {
+        nft2.classList.add('back')
+        nft1.classList.remove('back')
+      }
+    })
+
+    nextNft.addEventListener('click', () => {
+      if(nft2.classList.contains('back')) {
+        nft1.classList.add('back')
+        nft2.classList.remove('back')
+      }
+      else {
+        nft2.classList.add('back')
+        nft1.classList.remove('back')
+      }
+    })
     
   },
   finalize() {
