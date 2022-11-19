@@ -1,4 +1,4 @@
-.default-template {
+.page-template-default {
   background-color: #FFF9EF;
   // background-image: url("../images/homepage/slide-background.png");
 
@@ -44,11 +44,12 @@
   .content-page {
     display: flex;
     justify-content: center;
-    padding: 0 4%;
+    padding: 0 3%;
 
     .content-holder {
       display: block;
       max-width: 1200px;
+      width: 100%;
 
       h2 {
         font-family: "Inter Extra-Bold", sans-serif;
@@ -129,6 +130,10 @@
           line-height: 36px;
           color: #2E2E2D;
         }
+      }
+
+      a {
+        overflow-wrap: break-word;
       }
     }
   }
