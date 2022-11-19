@@ -1,7 +1,7 @@
 <section class="home-about-section">
   <div class="content">
     <h2>
-      “PROSTORIJA NIKAD NIJE TREBALA DA BUDE BREND”
+      “PROSTORIJA NIKAD NIJE TREBALO DA BUDE BREND”
     </h2>
     <a href="">
       About Us

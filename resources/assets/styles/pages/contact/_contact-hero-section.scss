@@ -1,0 +1,32 @@
+.contact-hero-section {
+  background-image: url("../images/blog/hero-background.png");
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 530px;
+  padding-top: 100px;
+  overflow-x: hidden;
+
+  @media (max-width: 600px) {
+    height: 295px;
+    background-position: left center;
+    height: 449px;
+  }
+
+  h1 {
+    background-image: url("../images/contact/tape.png");
+    font-family: "Inter Extra-Bold", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 83px;
+    color: #141414;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 133px;
+    width: 525px;
+  }
+}
