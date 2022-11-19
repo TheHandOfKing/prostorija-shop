@@ -56,8 +56,8 @@
         </a>
       </div>
       <div class="slide-holder" id="homepage-nft">
-        <img id="nft1" class="nft-photo" src="@asset('images/homepage/nft1.png')" alt="Slider Photo">
-        <img id="nft2" class="nft-photo back" src="@asset('images/homepage/nft2.png')" alt="Slider Photo">
+        <img id="nft1" class="nft-photo" src="@asset('images/homepage/nft-alt.png')" alt="Slider Photo">
+        <img id="nft2" class="nft-photo back" src="@asset('images/homepage/nft-alt.png')" alt="Slider Photo">
         <div id="prev-nft" class="slider-navigation previous">
           <svg width="66" height="61" viewBox="0 0 66 61" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="30.5" cy="30.5" r="30" transform="rotate(180 30.5 30.5)" stroke="#F6F6F6" />

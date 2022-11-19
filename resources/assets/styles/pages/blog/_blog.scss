@@ -206,6 +206,7 @@
         .list-of-links {
           align-items: center;
           justify-content: center;
+          flex-wrap: wrap;
           gap: 5px;
 
           .page-item {
@@ -228,10 +229,13 @@
               border: none;
               width: 72px;
               height: 72px;
-            }
+              border-radius: 4px;
+              transition: all 0.5s ease;
 
-            .page-link:hover {
-              background: none;
+              &:hover {
+                background: #d6cfc7;
+                opacity: 0.7;
+              }
             }
 
             .page-link:focus {
