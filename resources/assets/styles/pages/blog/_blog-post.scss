@@ -6,6 +6,24 @@
     justify-content: center;
     background-image: url("../images/blog/post-background.png");
     width: 100%;
+    height: 915px;
+    background-repeat: no-repeat;
+    align-items: flex-start;
+    gap: 50px;
+    overflow-x: hidden;
+
+    @media (max-width: 1650px) {
+      gap: 0;
+    }
+
+    @media (max-width: 920px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    @media (max-width: 520px) {
+      background-position: bottom;
+    }
 
     .text {
       display: flex;
@@ -14,6 +32,28 @@
       padding-top: 250px;
       width: 505px;
       gap: 36px;
+
+      @media (max-width: 1650px) {
+        margin-right: -200px;
+      }
+
+      @media (max-width: 1320px) {
+        margin-right: -300px;
+      }
+
+      @media (max-width: 1050px) {
+        margin-right: -350px;
+      }
+
+      @media (max-width: 920px) {
+        margin-right: 0;
+        margin-top: -300px;
+        width: 94%;
+      }
+
+      @media (max-width: 520px) {
+        margin-top: -400px;
+      }
 
       .entry-title {
         position: relative;
@@ -27,6 +67,10 @@
           color: #FFFFFF;
           z-index: 20;
           position: relative;
+
+          @media (max-width: 520px) {
+            font-size: 40px;
+          }
         }
 
         .tape-heading {
@@ -44,6 +88,11 @@
         line-height: 22px;
         color: #FFFFFF;
         opacity: 0.6;
+        width: 60%;
+
+        @media (max-width: 920px) {
+          width: 100%;
+        }
       }
 
       .author-holder {
@@ -83,8 +132,33 @@
 
     .img-holder {
       position: relative;
-      max-width: 980px;
-      margin-top: 120px;
+      margin-top: 150px;
+      width: auto;
+      height: auto;
+
+      @media (max-width: 1650px) {
+        transform: scale(0.8);
+      }
+
+      @media (max-width: 1320px) {
+        transform: scale(0.6);
+        margin-right: -200px;
+      }
+
+      @media (max-width: 1050px) {
+        transform: scale(0.5);
+        margin-right: -250px;
+      }
+
+      @media (max-width: 920px) {
+        margin-right: 0;
+        margin-top: -190px;
+      }
+
+      @media (max-width: 520px) {
+        transform: scale(0.3);
+        margin-top: -320px;
+      }
 
       .wp-post-image {
         transform: rotate(3.93deg);
@@ -92,14 +166,14 @@
 
       .tape-bl {
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: -60px;
+        left: -110px;    
         z-index: 2;
       }
 
       .tape-tr {
         position: absolute;
-        top: 0;
+        top: -37px;
         right: 0;
         z-index: 2;
       }
@@ -109,7 +183,7 @@
   .post-content {
     display: flex;
     justify-content: center;
-    padding: 0 4%;
+    padding: 0 3%;
 
     .holder {
       width: 1300px;

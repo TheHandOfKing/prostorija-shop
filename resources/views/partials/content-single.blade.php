@@ -23,7 +23,7 @@
       @if(has_post_thumbnail($posts[0]->ID))
       <?= get_the_post_thumbnail($posts[0]->ID); ?>
       @else
-      <img src="@asset('images/blog/default.png')" alt="Blog post picture" class="wp-post-image" />
+      <img src="@asset('images/blog/default-post.png')" alt="Blog post picture" class="wp-post-image" />
       @endif
     </div>
   </div>

@@ -27,7 +27,7 @@
     @if (has_post_thumbnail($post->ID))
     <?=get_the_post_thumbnail($post->ID, 'full')?>
     @else
-    <img class="post-thumbnail" src="@asset('images/blog/default.png')" alt="Post image" />
+    <img class="post-thumbnail" src="@asset('images/blog/default-post.png')" alt="Post image" />
     @endif
   </div>
 </div>
