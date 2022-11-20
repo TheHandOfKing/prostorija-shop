@@ -1,14 +1,84 @@
 .home-headwear-section {
-  background-color: #e5e5e5;
-  background-image: url("../images/homepage/about-background.svg");
+  // background-image: url("../images/homepage/about-background.svg");
   z-index: 0;
   position: relative;
   min-height: 600px;
 
   .container {
+    max-width: 1508px !important;
+
     .right {
+      width: 50%;
+
+      .svg-primary {
+        z-index: 10;
+      }
+
+      .svg-inner {
+        top: 18%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+        z-index: 7;
+        animation: rotating 7s linear infinite;
+      }
+
+      .svg-prostorija {
+        top: 42%;
+        left: 40%;
+        transform: translate(-25%, -17%);
+        z-index: 5;
+        animation: rotating 40s linear infinite;
+      }
+
       .image-headwear {
         height: 724px;
+      }
+    }
+
+    .left {
+      width: 50%;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        margin-bottom: 47px;
+        font-weight: 800;
+        font-size: 40px;
+        font-family: 'Inter Extra-Bold', sans-serif;
+        line-height: 83px;
+        color: #141414;
+      }
+
+      p {
+        margin-bottom: 41px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #141414;
+        font-family: 'Inter Light', sans-serif;
+        max-width: 403px;
+      }
+
+      h1,
+      p {
+        text-align: left;
+        width: 100%;
+      }
+
+      button {
+        width: 197.25px;
+        height: 54.32px;
+        border-radius: 8px;
+        background-color: #363636;
+        color: #fff;
+        border: 1px solid #363636;
+        transition: 0.3s all ease;
+
+        &:hover {
+          color: #363636;
+          background-color: transparent;
+        }
       }
     }
   }

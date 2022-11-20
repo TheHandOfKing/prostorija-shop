@@ -15,9 +15,18 @@
       </div>
       <div class="right-desc">
         <h1>-Just <br>Prostorija</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <p class="text text-active">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-          ex ea commodo consequat.</p>
+          ex ea commodo consequat.
+        </p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.
+        </p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.
+        </p>
 
         <a href="#">Check It</a>
 
@@ -34,7 +43,15 @@
     </div>
     <div class="right">
       <div class="image">
-        <img src="@asset('images/homepage/first-section-image.png')" alt="videoplayback">
+        <div class="main-image active-main">
+          <img src="@asset('images/homepage/first-section-image.png')" alt="videoplayback">
+        </div>
+        <div class="main-image">
+          <img src="@asset('images/homepage/first-section-image.png')" alt="videoplayback">
+        </div>
+        <div class="main-image">
+          <img src="@asset('images/homepage/first-section-image.png')" alt="videoplayback">
+        </div>
       </div>
     </div>
   </div>

@@ -4,6 +4,8 @@ export default {
     let moveLine = document.getElementById('line-to-move');
     let numbers = document.getElementsByClassName('number');
     let images = document.getElementsByClassName('images-select');
+    let mainImages = document.getElementsByClassName('main-image');
+    let text = document.getElementsByClassName('text');
 
     for (let i = 0; i < numbers.length; i++) {
       const number = numbers[i];
@@ -18,6 +20,12 @@ export default {
           images[2].classList.remove('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.add('active-image');
+          mainImages[0].classList.add('active-main');
+          mainImages[1].classList.remove('active-main');
+          mainImages[2].classList.remove('active-main');
+          text[0].classList.add('text-active')
+          text[1].classList.remove('text-active')
+          text[2].classList.remove('text-active')
         }
 
         else if (aria == 1) {
@@ -28,6 +36,12 @@ export default {
           images[2].classList.remove('active-image');
           images[1].classList.add('active-image');
           images[0].classList.remove('active-image');
+          mainImages[0].classList.remove('active-main');
+          mainImages[1].classList.add('active-main');
+          mainImages[2].classList.remove('active-main');
+          text[0].classList.remove('text-active')
+          text[1].classList.add('text-active')
+          text[2].classList.remove('text-active')
         }
 
         else {
@@ -38,6 +52,12 @@ export default {
           images[2].classList.add('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.remove('active-image');
+          mainImages[0].classList.remove('active-main');
+          mainImages[1].classList.remove('active-main');
+          mainImages[2].classList.add('active-main');
+          text[0].classList.remove('text-active')
+          text[1].classList.remove('text-active')
+          text[2].classList.add('text-active')
         }
       })
     }
@@ -48,21 +68,51 @@ export default {
         let aria = image.getAttribute('aria-value');
 
         if (aria == 0) {
+          moveLine.style.top = '0';
+          numbers[0].classList.add('active');
+          numbers[1].classList.remove('active');
+          numbers[2].classList.remove('active');
           images[2].classList.remove('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.add('active-image');
+          mainImages[0].classList.add('active-main');
+          mainImages[1].classList.remove('active-main');
+          mainImages[2].classList.remove('active-main');
+          text[0].classList.add('text-active')
+          text[1].classList.remove('text-active')
+          text[2].classList.remove('text-active')
         }
 
         else if (aria == 1) {
+          moveLine.style.top = '75px';
+          numbers[0].classList.remove('active');
+          numbers[1].classList.add('active');
+          numbers[2].classList.remove('active');
           images[2].classList.remove('active-image');
           images[1].classList.add('active-image');
           images[0].classList.remove('active-image');
+          mainImages[0].classList.remove('active-main');
+          mainImages[1].classList.add('active-main');
+          mainImages[2].classList.remove('active-main');
+          text[0].classList.remove('text-active')
+          text[1].classList.add('text-active')
+          text[2].classList.remove('text-active')
         }
 
         else {
+          moveLine.style.top = '169px';
+          numbers[0].classList.remove('active');
+          numbers[1].classList.remove('active');
+          numbers[2].classList.add('active');
           images[2].classList.add('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.remove('active-image');
+          mainImages[0].classList.remove('active-main');
+          mainImages[1].classList.remove('active-main');
+          mainImages[2].classList.add('active-main');
+          text[0].classList.remove('text-active')
+          text[1].classList.remove('text-active')
+          text[2].classList.add('text-active')
         }
       })
     }
@@ -75,7 +125,7 @@ export default {
     let slider2 = document.getElementById('slider2');
 
     prevButton.addEventListener('click', () => {
-      if(slider2.classList.contains('back')) {
+      if (slider2.classList.contains('back')) {
         slider1.classList.add('back')
         slider2.classList.remove('back')
       }
@@ -86,7 +136,7 @@ export default {
     })
 
     nextButton.addEventListener('click', () => {
-      if(slider2.classList.contains('back')) {
+      if (slider2.classList.contains('back')) {
         slider1.classList.add('back')
         slider2.classList.remove('back')
       }
@@ -104,7 +154,7 @@ export default {
     let nft2 = document.getElementById('nft2');
 
     prevNft.addEventListener('click', () => {
-      if(nft2.classList.contains('back')) {
+      if (nft2.classList.contains('back')) {
         nft1.classList.add('back')
         nft2.classList.remove('back')
       }
@@ -115,7 +165,7 @@ export default {
     })
 
     nextNft.addEventListener('click', () => {
-      if(nft2.classList.contains('back')) {
+      if (nft2.classList.contains('back')) {
         nft1.classList.add('back')
         nft2.classList.remove('back')
       }
@@ -124,7 +174,7 @@ export default {
         nft1.classList.remove('back')
       }
     })
-    
+
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS

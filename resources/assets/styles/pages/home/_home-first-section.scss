@@ -38,7 +38,12 @@
           color: #FFFFFF;
           opacity: 0.6;
           margin-bottom: 34px;
-          font-family: 'Inter Light';
+          font-family: 'Inter Light', sans-serif;
+          display: none;
+        }
+
+        .text-active {
+          display: block;
         }
 
         a {
@@ -154,6 +159,14 @@
           position: absolute;
           top: 0px;
           z-index: 0;
+        }
+
+        .main-image {
+          display: none;
+        }
+
+        .active-main {
+          display: block;
         }
       }
     }
