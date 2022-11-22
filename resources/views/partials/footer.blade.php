@@ -20,42 +20,42 @@
       </svg>
     </a>
     <div class="menu">
-      <a href="{{get_site_url()}}">
+      <a class="<?php if (is_page('Homepage')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}">
         home
         <svg viewBox="0 0 70 36">
           <path
             d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
         </svg>
       </a>
-      <a href="{{get_site_url()}}/shop">
+      <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop">
         shop
         <svg viewBox="0 0 70 36">
           <path
             d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
         </svg>
       </a>
-      <a href="{{get_site_url()}}/contact">
+      <a class="<?php if (is_page('Contact')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/contact">
         contact
         <svg viewBox="0 0 70 36">
           <path
             d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
         </svg>
       </a>
-      <a href="{{get_site_url()}}/blog">
+      <a class="<?php if (is_page('Blog')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/blog">
         blog
         <svg viewBox="0 0 70 36">
           <path
             d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
         </svg>
       </a>
-      <a href="{{get_site_url()}}/tos">
+      <a class="<?php if (is_page('ToS')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/tos">
         tos
         <svg viewBox="0 0 70 36">
           <path
             d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
         </svg>
       </a>
-      <a href="{{get_site_url()}}/o-nama">
+      <a class="<?php if (is_page('O nama')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/o-nama">
         o nama
         <svg viewBox="0 0 70 36">
           <path

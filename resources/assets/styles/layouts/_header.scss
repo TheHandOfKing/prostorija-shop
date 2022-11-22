@@ -6,6 +6,18 @@
   background-color: none;
   z-index: 1000;
 
+  .current-menu-item {
+    --spacing: 4px;
+    --stroke: var(--line-active);
+    --stroke-delay: .1s;
+    --offset: 180px;
+    text-decoration: none;
+
+    .svg-lines {
+      opacity: 1 !important;
+    }
+  }
+
   .custom-width {
     width: 1440px !important;
     max-width: 1440px !important;
@@ -30,10 +42,44 @@
       color: #141414;
       transition: all 0.2s ease-out;
       margin-right: 12px;
+      transition: margin .25s;
+      margin: 0 var(--spacing, 0px);
+      position: relative;
+
+      .svg-lines {
+        --text: #fff;
+        --line: #2B3044;
+        --line-active: #2B3044;
+        opacity: 0;
+        width: 76px;
+        height: 40px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 7px) translateZ(0);
+        fill: none;
+        stroke: var(--stroke, var(--line));
+        stroke-linecap: round;
+        stroke-width: 2px;
+        stroke-dasharray: var(--offset, 69px) 278px;
+        stroke-dashoffset: 361px;
+        transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+      }
 
       &:hover {
-        color: #5eeb5b;
+        --spacing: 15px;
+        --stroke: var(--line-active);
+        --stroke-delay: .1s;
+        --offset: 180px;
         text-decoration: none;
+
+        .svg-lines {
+          opacity: 1;
+        }
+      }
+
+      &.current-menu-item {
+        --spacing: 15px;
       }
     }
 
@@ -41,7 +87,7 @@
       width: 100%;
       padding: 0 3%;
 
-      #menu-header-1 {
+      .menu-header {
         padding: 0;
         margin: 0;
         display: flex;
@@ -78,7 +124,7 @@
         width: 100%;
       }
 
-      #menu-header {
+      .menu-header {
         display: flex;
         justify-content: space-between;
         padding: 0;
@@ -91,16 +137,51 @@
       }
 
       a {
-        // font-family: $secondary-font;
-        font-size: 20px;
-        color: #fff;
-        transition: all 0.2s ease-out;
-        margin-right: 12px;
-        font-family: 'Inter Medium';
+        font-family: $misc-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        transition: margin .25s;
+        margin: 0 var(--spacing, 0px);
+        position: relative;
+
+        .svg-lines {
+          --text: #2B3044;
+          --line: #fff;
+          --line-active: #fff;
+          opacity: 0;
+          width: 76px;
+          height: 40px;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 7px) translateZ(0);
+          fill: none;
+          stroke: var(--stroke, var(--line));
+          stroke-linecap: round;
+          stroke-width: 2px;
+          stroke-dasharray: var(--offset, 69px) 278px;
+          stroke-dashoffset: 361px;
+          transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+        }
 
         &:hover {
-          color: #5eeb5b;
-          text-decoration: underline;
+          --spacing: 4px;
+          --stroke: var(--line-active);
+          --stroke-delay: .1s;
+          --offset: 180px;
+          text-decoration: none;
+
+          svg {
+            opacity: 1;
+          }
+        }
+
+        @media (min-width: 1921px) {
+          background-size: 100%;
+          font-size: 1vw;
         }
       }
     }
@@ -168,6 +249,10 @@
       align-items: center;
       max-width: 100%;
 
+      @media (max-width: 389px) {
+        column-gap: 30px;
+      }
+
       a {
         @media (min-width: 1921px) {
           width: 4vw;
@@ -183,13 +268,7 @@
       }
     }
 
-    .regular-menu #menu-header-1 { 
-      .current-menu-item {
-        a {
-          // color: $secondary-color;
-        }
-      }
-  
+    .regular-menu .menu-header { 
       li {
         width: 100%;
         text-align: left;
@@ -197,10 +276,6 @@
         border-bottom: 1px solid #000;
         padding-bottom: 10px;
         transition: 0.3s all ease;
-  
-        &:hover {
-          // border-bottom: 1px solid white;
-        }
       }
     }
   }

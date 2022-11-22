@@ -25,12 +25,55 @@
         </div>
         <div class="navbar left">
           <div class="menu-holder">
-            @php if(has_nav_menu('regular-menu')){
-            wp_nav_menu( array(
-            'theme_location' => 'regular-menu',
-            'container_class' => 'regular-menu' ) );
-            }
-            @endphp
+            <div class="regular-menu">
+              <ul id="menu-header" class="menu-header">
+                <li>
+                  <a class="<?php if (is_page('Homepage')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}">
+                    home
+                    <svg class="svg-lines" viewBox="0 0 70 36">
+                      <path
+                        d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop">
+                    shop
+                    <svg class="svg-lines" viewBox="0 0 70 36">
+                      <path
+                        d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="<?php if (is_page('Contact')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/contact">
+                    contact
+                    <svg class="svg-lines" viewBox="0 0 70 36">
+                      <path
+                        d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="<?php if (is_page('Blog')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/blog">
+                    blog
+                    <svg class="svg-lines" viewBox="0 0 70 36">
+                      <path
+                        d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="<?php if (is_page('O nama')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/o-nama">
+                    o nama
+                    <svg class="svg-lines" viewBox="0 0 70 36">
+                      <path
+                        d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -82,12 +125,55 @@
   </div>
 
   <div class="menu-holder-phone">
-    @php if(has_nav_menu('regular-menu')){
-    wp_nav_menu( array(
-    'theme_location' => 'regular-menu',
-    'container_class' => 'regular-menu' ) );
-    }
-    @endphp
+    <div class="regular-menu">
+      <ul class="menu-header">
+        <li>
+          <a class="<?php if (is_page('Homepage')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}">
+            home
+            <svg class="svg-lines" viewBox="0 0 70 36">
+              <path
+                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop">
+            shop
+            <svg class="svg-lines" viewBox="0 0 70 36">
+              <path
+                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="<?php if (is_page('Contact')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/contact">
+            contact
+            <svg class="svg-lines" viewBox="0 0 70 36">
+              <path
+                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="<?php if (is_page('Blog')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/blog">
+            blog
+            <svg class="svg-lines" viewBox="0 0 70 36">
+              <path
+                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="<?php if (is_page('O nama')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/o-nama">
+            o nama
+            <svg class="svg-lines" viewBox="0 0 70 36">
+              <path
+                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="socials">
       <a href="https://www.facebook.com/Prostorijashop/" target="_blank">
         <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -148,6 +148,18 @@
           background-size: 100%;
           font-size: 1vw;
         }
+
+        &.current-menu-item {
+          --spacing: 4px;
+          --stroke: var(--line-active);
+          --stroke-delay: .1s;
+          --offset: 180px;
+          text-decoration: none;
+
+          svg {
+            opacity: 1 !important;
+          }
+        }
       }
     }
 
