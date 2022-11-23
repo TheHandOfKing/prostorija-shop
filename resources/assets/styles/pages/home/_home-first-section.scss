@@ -13,18 +13,21 @@
   @media (max-width: 1280px) {
     height: auto;
     background-size: 100% 100%;
-    padding-top: 120px;
     background-color: #000;
     padding-bottom: 30px;
+    align-items: flex-start;
+    height: 1560px;
+    padding-top: 120px;
+    overflow-y: hidden;
   }
 
   @media (max-width: 710px) {
     padding-bottom: 0;
-    height: 1260px;
+    height: 1230px;
   }
 
   @media (max-width: 500px) {
-    height: 1170px;
+    height: 1130px;
   }
 
   @media (max-width: 410px) {
