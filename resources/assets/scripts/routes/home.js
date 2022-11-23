@@ -3,9 +3,10 @@ export default {
     // JavaScript to be fired on the home page
     let moveLine = document.getElementById('line-to-move');
     let numbers = document.getElementsByClassName('number');
+    let moveLineMob = document.getElementById('line-to-move-mob');
     let images = document.getElementsByClassName('images-select');
     let mainImages = document.getElementsByClassName('main-image');
-    let text = document.getElementsByClassName('text');
+    let text = document.getElementsByClassName('text-holder');
 
     for (let i = 0; i < numbers.length; i++) {
       const number = numbers[i];
@@ -17,6 +18,9 @@ export default {
           numbers[0].classList.add('active');
           numbers[1].classList.remove('active');
           numbers[2].classList.remove('active');
+          numbers[3].classList.add('active');
+          numbers[4].classList.remove('active');
+          numbers[5].classList.remove('active');
           images[2].classList.remove('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.add('active-image');
@@ -33,6 +37,9 @@ export default {
           numbers[0].classList.remove('active');
           numbers[1].classList.add('active');
           numbers[2].classList.remove('active');
+          numbers[3].classList.remove('active');
+          numbers[4].classList.add('active');
+          numbers[5].classList.remove('active');
           images[2].classList.remove('active-image');
           images[1].classList.add('active-image');
           images[0].classList.remove('active-image');
@@ -44,11 +51,64 @@ export default {
           text[2].classList.remove('text-active')
         }
 
-        else {
+        else if (aria == 2) {
           moveLine.style.top = '169px';
           numbers[0].classList.remove('active');
           numbers[1].classList.remove('active');
           numbers[2].classList.add('active');
+          numbers[3].classList.remove('active');
+          numbers[4].classList.remove('active');
+          numbers[5].classList.add('active');
+          images[2].classList.add('active-image');
+          images[1].classList.remove('active-image');
+          images[0].classList.remove('active-image');
+          mainImages[0].classList.remove('active-main');
+          mainImages[1].classList.remove('active-main');
+          mainImages[2].classList.add('active-main');
+          text[0].classList.remove('text-active')
+          text[1].classList.remove('text-active')
+          text[2].classList.add('text-active')
+        }
+
+        // For Mobile
+
+        else if (aria == 10) {
+          moveLineMob.style.left = '0';
+          numbers[3].classList.add('active');
+          numbers[4].classList.remove('active');
+          numbers[5].classList.remove('active');
+          images[2].classList.remove('active-image');
+          images[1].classList.remove('active-image');
+          images[0].classList.add('active-image');
+          mainImages[0].classList.add('active-main');
+          mainImages[1].classList.remove('active-main');
+          mainImages[2].classList.remove('active-main');
+          text[0].classList.add('text-active')
+          text[1].classList.remove('text-active')
+          text[2].classList.remove('text-active')
+        }
+
+        else if (aria == 20) {
+          moveLineMob.style.left = '33.33%';
+          numbers[3].classList.remove('active');
+          numbers[4].classList.add('active');
+          numbers[5].classList.remove('active');
+          images[2].classList.remove('active-image');
+          images[1].classList.add('active-image');
+          images[0].classList.remove('active-image');
+          mainImages[0].classList.remove('active-main');
+          mainImages[1].classList.add('active-main');
+          mainImages[2].classList.remove('active-main');
+          text[0].classList.remove('text-active')
+          text[1].classList.add('text-active')
+          text[2].classList.remove('text-active')
+        }
+
+        else if (aria == 30) {
+          moveLineMob.style.left = '66.66%';
+          numbers[3].classList.remove('active');
+          numbers[4].classList.remove('active');
+          numbers[5].classList.add('active');
           images[2].classList.add('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.remove('active-image');
@@ -69,9 +129,13 @@ export default {
 
         if (aria == 0) {
           moveLine.style.top = '0';
+          moveLineMob.style.left = '0';
           numbers[0].classList.add('active');
           numbers[1].classList.remove('active');
           numbers[2].classList.remove('active');
+          numbers[3].classList.add('active');
+          numbers[4].classList.remove('active');
+          numbers[5].classList.remove('active');
           images[2].classList.remove('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.add('active-image');
@@ -85,9 +149,13 @@ export default {
 
         else if (aria == 1) {
           moveLine.style.top = '75px';
+          moveLineMob.style.left = '33.33%';
           numbers[0].classList.remove('active');
           numbers[1].classList.add('active');
           numbers[2].classList.remove('active');
+          numbers[3].classList.remove('active');
+          numbers[4].classList.add('active');
+          numbers[5].classList.remove('active');
           images[2].classList.remove('active-image');
           images[1].classList.add('active-image');
           images[0].classList.remove('active-image');
@@ -99,11 +167,15 @@ export default {
           text[2].classList.remove('text-active')
         }
 
-        else {
+        else if (aria == 2) {
           moveLine.style.top = '169px';
+          moveLineMob.style.left = '66.66%';
           numbers[0].classList.remove('active');
           numbers[1].classList.remove('active');
           numbers[2].classList.add('active');
+          numbers[3].classList.remove('active');
+          numbers[4].classList.remove('active');
+          numbers[5].classList.add('active');
           images[2].classList.add('active-image');
           images[1].classList.remove('active-image');
           images[0].classList.remove('active-image');
