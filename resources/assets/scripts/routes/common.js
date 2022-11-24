@@ -48,44 +48,44 @@ export default {
         }
       })
 
-      $('.main').click(function () {
-        if (menu_bars.dataset.clicked == 1) {
-          menu_bars.children[0].style.position = 'static';
-          menu_bars.children[0].classList.add('burger-regular');
-          menu_bars.children[0].classList.remove('burger-x');
-          menu_bars.dataset.clicked = 0;
-          menu_display.style.transform = 'scale(1, 0)';
-          menu_display.style.height = '0';
-          for (let i = 0; i < menu_links.length; i++) {
-            menu_links[i].style.opacity = '0'
-          }
-        }
-      });
+      // $('.main').click(function () {
+      //   if (menu_bars.dataset.clicked == 1) {
+      //     menu_bars.children[0].style.position = 'static';
+      //     menu_bars.children[0].classList.add('burger-regular');
+      //     menu_bars.children[0].classList.remove('burger-x');
+      //     menu_bars.dataset.clicked = 0;
+      //     menu_display.style.transform = 'scale(1, 0)';
+      //     menu_display.style.height = '0';
+      //     for (let i = 0; i < menu_links.length; i++) {
+      //       menu_links[i].style.opacity = '0'
+      //     }
+      //   }
+      // });
 
 
-      window.onresize = function () {
-        if (window.innerWidth > 767) {
-          menu_display.style.display = 'none';
-          menu_display.style.transform = 'scale(1, 1)';
+      // window.onresize = function () {
+      //   if (window.innerWidth > 767) {
+      //     menu_display.style.display = 'none';
+      //     menu_display.style.transform = 'scale(1, 1)';
 
-          for (let i = 0; i < menu_links.length; i++) {
-            menu_links[i].style.opacity = '1';
-          }
-        }
+      //     for (let i = 0; i < menu_links.length; i++) {
+      //       menu_links[i].style.opacity = '1';
+      //     }
+      //   }
 
-        else {
-          menu_display.style.display = 'flex';
-          menu_bars.children[0].style.position = 'static';
-          menu_bars.children[0].classList.add('burger-regular');
-          menu_bars.children[0].classList.remove('burger-x');
-          menu_bars.dataset.clicked = 0;
-          menu_display.style.transform = 'scale(1, 0)';
-          menu_display.style.height = '0';
-          for (let i = 0; i < menu_links.length; i++) {
-            menu_links[i].style.opacity = '0'
-          }
-        }
-      }
+      //   else {
+      //     menu_display.style.display = 'flex';
+      //     menu_bars.children[0].style.position = 'static';
+      //     menu_bars.children[0].classList.add('burger-regular');
+      //     menu_bars.children[0].classList.remove('burger-x');
+      //     menu_bars.dataset.clicked = 0;
+      //     menu_display.style.transform = 'scale(1, 0)';
+      //     menu_display.style.height = '0';
+      //     for (let i = 0; i < menu_links.length; i++) {
+      //       menu_links[i].style.opacity = '0'
+      //     }
+      //   }
+      // }
 
       $('#search-icon').click(function () {
         $('.search-form').css('opacity', '1');

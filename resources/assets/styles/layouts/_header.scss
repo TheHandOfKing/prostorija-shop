@@ -102,8 +102,8 @@
 
       .search-form {
         width: 100%;
-        height: 40px;
-        margin-top: 20px;
+        height: 60px;
+        margin-top: 0;
         margin-bottom: 20px;
 
         #close-search-icon {
@@ -403,8 +403,8 @@
       .right-side-holder {
         display: flex;
         align-items: center;
-        justify-content: center;
-        gap: 20px;
+        justify-content: space-between;
+        width: 88px;
       }
 
       .phone-menu-bar-holder {
@@ -463,7 +463,7 @@
       }
 
       a {
-        svg {
+        .mobile-logo {
           width: 60px;
           height: 60px;
         }
