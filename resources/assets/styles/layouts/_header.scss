@@ -85,7 +85,7 @@
 
     .regular-menu {
       width: 100%;
-      padding: 0 3%;
+      padding: 15px 3% 0 3%;
 
       .menu-header {
         padding: 0;
@@ -97,6 +97,58 @@
 
         li::marker {
           content: '';
+        }
+      }
+
+      .search-form {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        #close-search-icon {
+          display: none;
+        }
+
+        .text-input {
+          width: 85%;
+          height: 100%;
+          border-top-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+          border: 3px solid #141414;
+          padding-left: 10px;
+          background-color: #141414;
+          transition: all 0.2s ease;
+
+          &:focus {
+            border-right: none;
+            outline: none;
+            color: #141414;
+            background-color: #fff;
+          }
+
+          &::placeholder {
+            color: #fff;
+          }
+        }
+
+        .submit-input {
+          width: 15%;
+          height: 100%;
+          background-color: #141414;
+          background-image: url("../images/header/search-icon-mobile.svg");
+          background-position: center center;
+          background-repeat: no-repeat;
+          border-top-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+          border: 3px solid #141414;
+          padding: 0;
+          transition: all 0.2s ease;
+
+          &:focus {
+            background-color: #fff;
+            background-image: url("../images/header/search-icon.svg");
+          }
         }
       }
     }
@@ -213,15 +265,65 @@
       align-items: center;
 
       a {
-        // font-family: $secondary-font;
         font-size: 20px;
         color: #fff;
         transition: all 0.2s ease-out;
         margin-left: 32px;
+      }
 
-        &:hover {
-          color: #5eeb5b;
-          text-decoration: none;
+      #search-icon-holder {
+        cursor: pointer;
+        position: relative;
+
+        #search-icon {
+          opacity: 1;
+          position: relative;
+          z-index: 100;
+          transition: all 0.7s ease;
+        }
+
+        .search-form {
+          width: 300px;
+          height: 40px;
+          position: absolute;
+          right: -21px;
+          top: 39px;
+          opacity: 0;
+          transition: opacity 0.5s ease, transform 0.9s ease;
+          z-index: -1;
+          transform: rotate(-20deg);
+
+          #close-search-icon {
+            position: absolute;
+            left: -30px;
+          }
+
+          .text-input {
+            width: 85%;
+            height: 100%;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            border: none;
+            padding-left: 10px;
+
+            &:focus {
+              border: none;
+              outline: none;
+            }
+          }
+
+          .submit-input {
+            width: 15%;
+            height: 100%;
+            background-color: #fff;
+            background-image: url("../images/header/search-icon.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            border: none;
+            padding: 0;
+          }
         }
       }
     }
@@ -272,7 +374,7 @@
       }
     }
 
-    .regular-menu .menu-header { 
+    .regular-menu .menu-header {
       li {
         width: 100%;
         text-align: left;
@@ -298,9 +400,16 @@
       height: 100%;
       align-items: center;
 
+      .right-side-holder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
       .phone-menu-bar-holder {
         display: block;
-  
+
         span,
         span::before,
         span::after {
@@ -312,41 +421,42 @@
           position: relative;
           transition: all ease-in-out 500ms;
         }
-  
+
         span::before,
         span::after {
           content: "";
           position: absolute;
         }
-  
+
         span::before {
           bottom: 9px;
         }
-  
+
         span::after {
           top: 8px;
         }
-  
+
         .burger-x {
           transition: transform 250ms ease-in-out;
           transform: rotate(45deg);
         }
-  
+
         .burger-x::before {
           opacity: 0;
         }
-  
+
         .burger-x::after {
           transform: translateY(-8px) rotate(-90deg);
         }
-  
+
         .burger-regular {
           transform: rotate(0deg);
         }
+
         .burger-regular::before {
           opacity: 1;
         }
-  
+
         .burger-regular::after {
           transform: translateY(0) rotate(0deg);
         }

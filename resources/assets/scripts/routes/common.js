@@ -86,6 +86,20 @@ export default {
           }
         }
       }
+
+      $('#search-icon').click(function () {
+        $('.search-form').css('opacity', '1');
+        $('#search-icon').css('z-index', '1');
+        $('.search-form').css('z-index', '100');
+        $('#search-icon').css('transform', 'rotate(-20deg)');
+      })
+
+      $('#close-search-icon').click(function () {
+        $('.search-form').css('opacity', '0');
+        $('#search-icon').css('z-index', '100');
+        $('.search-form').css('z-index', '-1');
+        $('#search-icon').css('transform', 'rotate(0deg)');
+      })
     })
   },
   finalize() {

@@ -263,6 +263,16 @@
       right: -64px;
       bottom: -105px;
       animation: rotating 40s linear infinite;
+
+      @media (max-width: 1300px) {
+        right: -97px;
+        bottom: -201px;
+      }
+
+      @media (max-width: 600px) {
+        right: -47px;
+        bottom: -178px;
+      }
     }
   }
 }
