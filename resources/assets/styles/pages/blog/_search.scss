@@ -1,328 +1,221 @@
 .search {
-  .blog-container {
-    padding-bottom: 200px;
+  main.main {
+    .page-header {
+      background-image: url("../images/default/header-background.png");
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      height: 495px;
+      padding-top: 100px;
 
-    .blog-hero {
-      height: 568px;
-      padding-top: 120px;
+      @media (max-width: 600px) {
+        height: 295px;
+        background-position: center center;
+      }
 
       h1 {
-        font-family: 'Gotham Light', sans-serif;
-        font-weight: 300;
-        font-size: 46px;
-        line-height: 64px;
+        width: 694px;
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 83px;
         color: #fff;
-        margin-left: 17%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 133px;
+        max-width: 100%;
+        text-align: center;
+
+        @media (max-width: 600px) {
+          width: 94%;
+          background-position: center;
+        }
+
+        @media (max-width: 360px) {
+          font-size: 30px;
+          line-height: 60px;
+        }
       }
     }
 
-    .post-container {
+    .alert-holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .alert-warning {
+        background: url("../images/default/tape.png");
+        width: 694px;
+        font-family: "Inter Extra-Bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 83px;
+        color: rgb(20, 20, 20);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 133px;
+        border: none;
+        max-width: 100%;
+
+        @media (max-width: 660px) {
+          width: 100%;
+          background-position: center;
+          font-size: 30px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    .content {
+      width: 100%;
       display: flex;
       justify-content: center;
 
-      .post-list-pagination {
-        .post-list {
-          display: flex;
-          align-items: flex-start;
-          justify-content: flex-end;
-          flex-wrap: wrap;
-          padding-left: 0;
-          width: 920px;
-
-          .article-holder {
-            display: flex;
-            align-items: center;
-            padding-bottom: 30px;
-            padding-right: 30px;
-
-            .single-post {
-              background: #fff;
-              border: 1px solid #e4e4e4;
-              box-sizing: border-box;
-              box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.04);
-              border-radius: 15px;
-              position: relative;
-              top: 0;
-              transition: top 1s;
-              display: inline-block;
-              width: 430px;
-
-              .post-featured-image {
-                position: relative;
-
-                .post-image-link {
-                  img {
-                    width: 100%;
-                    height: 256.69px;
-                    border-radius: 15px 15px 0px 0px;
-                  }
-                }
-
-                .category {
-                  position: absolute;
-                  bottom: -15px;
-                  left: 40px;
-                  z-index: 1;
-                  background: #52b58a;
-                  border-radius: 100px;
-                  width: 128px;
-                  height: 30px;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-
-                  .category-name {
-                    font-family: "Gotham Light", sans-serif;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 13px;
-                    text-align: center;
-                    color: #fff;
-                  }
-
-                  .category-name:hover {
-                    text-decoration: none;
-                  }
-                }
-              }
-
-              .post-text {
-                h2 {
-                  padding-left: 40px;
-                  padding-right: 40px;
-                  margin-top: 43.3px;
-                  font-family: "Gotham Medium", sans-serif;
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 26px;
-                  line-height: 150%;
-                  color: #333;
-                }
-
-                .date {
-                  padding-left: 40px;
-                  padding-right: 40px;
-                  font-family: "Gotham Light", sans-serif;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 14px;
-                  line-height: 13px;
-                  color: #333;
-                  opacity: 0.7;
-                }
-
-                .post-description {
-                  padding-left: 40px;
-                  padding-right: 40px;
-                  font-family: "Gotham Light", sans-serif;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 16px;
-                  line-height: 160%;
-                  color: #333;
-                }
-
-                .post-author {
-                  padding-left: 40px;
-                  display: flex;
-                  align-items: center;
-                  padding-bottom: 23px;
-
-                  img {
-                    width: 35px;
-                  }
-
-                  span {
-                    font-family: "Gotham Light", sans-serif;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 14px;
-                    line-height: 13px;
-                    color: #333;
-                    opacity: 0.7;
-                    margin-left: 14px;
-                  }
-                }
-              }
-
-              .post-text:hover {
-                text-decoration: none;
-              }
-            }
-
-            .single-post:hover {
-              top: -20px;
-            }
-          }
-        }
+      @media (max-width: 600px) {
+        padding-top: 40px;
       }
 
-      .blog-aside {
-        background: #fff;
-        border: 1px solid #e4e4e4;
-        box-sizing: border-box;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
-        border-radius: 15px;
-        padding-top: 38px;
-        padding-bottom: 38px;
-        padding-left: 25px;
-        padding-right: 15px;
-        margin-left: 20px;
-        width: 310px;
-        margin-bottom: 280px;
-        height: fit-content;
+      .search-articles-holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 94%;
+        width: 1508px;
+        row-gap: 50px;
 
-        .recent-posts-frame {
-          .search-bar {
-            .search-form {
-              margin-bottom: 50px;
+        .product {
+          display: none;
+        }
 
-              .search-field {
-                font-family: "Gotham Light", sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 15px;
-                color: #B8B8B8;
-                height: 45px;
-                border-radius: 8px 0 0 8px;
-                                
-                &:focus {
-                  box-shadow: none;
-                }
-              }
+        .post {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+          width: 40%;
 
-              .search-submit {
-                width: 45px;
-                height: 45px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-color: #F7941F;
-                border-radius: 0px 8px 8px 0px;
-                border: none;
-                                
-                &:focus {
-                  box-shadow: none;
-                }
-              }
-            }
+          @media (max-width: 900px) {
+            width: 100%;
           }
 
-          .recent-posts {
-            .aside-subtitle {
-              font-family: "Gotham Medium", sans-serif;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 19px;
-              color: #333;
+          .article-top {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 40px;
+
+            .entry-title {
+              position: relative;
+
+              a {
+                font-family: "Inter Extra-Bold", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 83px;
+                color: #141414;
+                z-index: 20;
+                position: relative;
+
+                @media (max-width: 520px) {
+                  font-size: 40px;
+                }
+              }
+
+              .tape-heading {
+                position: absolute;
+                left: -88px;
+                top: -50px;
+              }
             }
 
-            .category {
-              background: #52b58a;
-              border-radius: 100px;
-              width: 128px;
-              height: 30px;
+            .entry-meta {
               display: flex;
-              justify-content: center;
+              justify-content: flex-start;
               align-items: center;
-              margin-bottom: 21px;
-              margin-top: 34px;
+              font-family: "Inter Light", sans-serif;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 22px;
+              color: #141414;
 
-              .category-name {
-                font-family: "Gotham Light", sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 13px;
-                text-align: center;
-                color: #fff;
+              .byline {
+                margin: 0;
+                padding-right: 10px;
+                border-right: 1px solid #141414;
 
-                &:hover {
-                  text-decoration: none;
+                img {
+                  width: 24px;
+                  height: 24px;
+                  border-radius: 100%;
+                  border: 1px solid #fff;
                 }
               }
-            }
 
-            .recent-post {
-              p {
-                font-family: "Gotham Medium", sans-serif;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 150%;
-                color: #333;
-              }
-
-              .date {
-                font-family: "Gotham Light", sans-serif;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 13px;
-                color: #333;
-                opacity: 0.7;
-                margin-bottom: 34px;
+              .updated {
+                padding-left: 10px;
+                border-left: 1px solid #141414;
               }
             }
           }
 
-          .tags-wrap {
-            .aside-subtitle {
-              font-family: "Gotham Medium", sans-serif;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 19px;
-              color: #333;
-              padding-top: 50px;
-            }
+          .entry-summary {
+            font-family: "Inter Light", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #141414;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
 
-            .tag {
-              border: 1px solid #52B58A;
-              box-sizing: border-box;
-              border-radius: 100px;
-              font-family: "Gotham Light", sans-serif;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 45px;
-              text-align: center;
-              color: #52B58A;
-              padding: 9px 15px;
-              margin-right: 10px;
-              white-space: nowrap;
-            }
-          }
+            a {
+              transition: all 0.2s ease-out;
+              transition: margin .25s;
+              margin: 0 var(--spacing, 0px);
+              position: relative;
+              color: #141414;
+              font-family: "Inter Extra-Bold", sans-serif;
+              font-weight: 800;
 
-          .categories-wrap {
-            .aside-subtitle {
-              font-family: "Gotham Medium", sans-serif;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 20px;
-              line-height: 19px;
-              color: #333;
-              padding-top: 50px;
-              padding-bottom: 27px;
-            }
+              .svg-lines {
+                --text: #fff;
+                --line: #2B3044;
+                --line-active: #2B3044;
+                opacity: 0;
+                width: 164px;
+                height: 57px;
+                position: absolute;
+                left: 50%;
+                bottom: -7px;
+                transform: translate(-50%, 7px) translateZ(0);
+                fill: none;
+                stroke: var(--stroke, var(--line));
+                stroke-linecap: round;
+                stroke-width: 2px;
+                stroke-dasharray: var(--offset, 69px) 278px;
+                stroke-dashoffset: 361px;
+                transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+              }
 
-            .categories-list {
-              display: flex;
-              flex-direction: column;
-              padding-left: 20px;
+              &:hover {
+                --spacing: 15px;
+                --stroke: var(--line-active);
+                --stroke-delay: .1s;
+                --offset: 180px;
+                text-decoration: none;
 
-              .category {
-                margin-bottom: 10px;
-
-                a {
-                  font-family: "Gotham Light", sans-serif;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 16px;
-                  line-height: 150%;
-                  color: #52B58A;
+                .svg-lines {
+                  opacity: 1;
                 }
               }
             }
