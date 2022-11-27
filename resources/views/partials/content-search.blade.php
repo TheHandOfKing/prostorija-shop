@@ -2,17 +2,17 @@
   <div class="article-top">
     <h2 class="entry-title">
       <a>
-        {!! get_the_title() !!}
+        {{$searchitem->post_title}}
       </a>
       <img class="tape-heading" src="@asset('images/blog/post-tape.png')" alt="Tape">
     </h2>
-    @if (get_post_type() === 'post')
-      @include('partials/entry-meta')
+    @if ($searchitem->post_type === 'post')
+      @include('partials/entry-meta', ['searchitem' => $searchitem])
     @endif
   </div>
   <div class="entry-summary">
-    @php echo Posts::getExcerptForPostContent(get_the_content(), 250) @endphp
-    <a href="{{get_permalink()}}">
+    @php echo Posts::getExcerptForPostContent($searchitem->post_content, 250) @endphp
+    <a href="{{ get_permalink($searchitem->ID) }}">
       Read more
       <svg class="svg-lines" viewBox="0 0 70 36">
         <path

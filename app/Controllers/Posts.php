@@ -8,7 +8,7 @@ use WP_Query;
 
 class Posts extends Controller {
 
-  public static  function getAllPosts() {
+  public static function getAllPosts() {
     $catquery = new WP_Query(array(
         // 'category_name' => 'Immigration News',
          'post_type'        => 'post'
@@ -24,6 +24,32 @@ class Posts extends Controller {
     } 
     return $posts;
   }
+
+  public static function getSearchedItems($postsPerPage, $page, $searchQuery) {
+    $catquery = new WP_Query(array(
+    'post_type' => array('post', 'product'),
+    'posts_per_page' => $postsPerPage,
+    'paged' => $page,
+    "s" => $searchQuery
+    ));
+    
+    $posts = $catquery->posts;
+    return $posts;
+  }
+
+  public static function paginationSearchPage($searchQuery, $postsPerPage) {
+    $catquery = new WP_Query(array(
+    'post_type' => array('post', 'product'),
+    // 'posts_per_page' => $postsPerPage,
+    "s" => $searchQuery
+    ));
+    
+    $posts = $catquery->posts;
+    // return count($posts);
+    $numOfPages = intval(ceil(count($posts) / $postsPerPage));
+    return $numOfPages;
+  }
+
   
   // Get Posts by page
   public static  function getPostsByPage($postsPerPage , $page) {

@@ -1,3 +1,13 @@
+<?php
+$postsPerPage = 8;
+$searchQuery = $_GET['s'];
+$totalPages = Posts::paginationSearchPage($searchQuery, $postsPerPage);
+$res = Posts::getCurrentPage($_GET['pageNumber'], $totalPages);
+$currentPage = $res->currentPage;
+$searchPosts = Posts::getSearchedItems($postsPerPage, $currentPage, $searchQuery);
+?>
+
+
 @extends('layouts.app')
 
 @section('content')
@@ -12,10 +22,11 @@
 @endif
 <div class="content">
   <div class="search-articles-holder">
-    @while(have_posts()) @php the_post() @endphp
-    @include('partials.content-search')
-    @endwhile
+    @foreach ($searchPosts as $item)
+    @component('partials.content-search', ['searchitem' => $item])
+    @endcomponent
+    @endforeach
   </div>
 </div>
-{!! get_the_posts_navigation() !!}
+@component('components.blog.search-pagination' , ['currentPage' => $currentPage , 'counted' => $totalPages, 'varSearch' => $searchQuery]) @endcomponent
 @endsection
