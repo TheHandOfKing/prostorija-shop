@@ -28,5 +28,7 @@ $searchPosts = Posts::getSearchedItems($postsPerPage, $currentPage, $searchQuery
     @endforeach
   </div>
 </div>
+@if (have_posts())
 @component('components.blog.search-pagination' , ['currentPage' => $currentPage , 'counted' => $totalPages, 'varSearch' => $searchQuery]) @endcomponent
+@endif
 @endsection

@@ -4,6 +4,6 @@
             d="M16.6252 0L9.49916 7.125L2.37479 0L0 2.375L7.12437 9.5L0 16.625L2.37479 19L9.49916 11.875L16.6252 19L19 16.625L11.8756 9.5L19 2.375L16.6252 0Z"
             fill="white" />
     </svg>
-    <input class="text-input" type="text" value="" name="s" id="s" placeholder="Looking for?" />
+    <input class="text-input" type="text" value="" name="s" id="s" placeholder="Šta si mislio?" />
     <input class="submit-input" type="submit" id="searchsubmit" value="" />
 </form>

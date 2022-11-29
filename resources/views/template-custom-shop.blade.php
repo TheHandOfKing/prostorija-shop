@@ -1,5 +1,5 @@
 {{--
-  Template Name:  Shop Page
+  Template Name:  Custom Shop Page
 --}}
 @extends('layouts.app')
 @section('content')
