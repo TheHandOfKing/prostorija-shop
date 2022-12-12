@@ -37,7 +37,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop">
+                  <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop-categories">
                     shop
                     <svg class="svg-lines" viewBox="0 0 70 36">
                       <path
@@ -150,7 +150,7 @@
           </a>
         </li>
         <li>
-          <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop">
+          <a class="<?php if (is_page('Shop')) echo 'current-menu-item'; ?>" href="{{get_site_url()}}/shop-categories">
             shop
             <svg class="svg-lines" viewBox="0 0 70 36">
               <path

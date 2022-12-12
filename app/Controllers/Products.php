@@ -8,7 +8,7 @@ use WP_Query;
 
 class Products extends Controller {
   //As said, if there is a best selling item, add it, if not, then add items in no particular order
-  public function getBestSellingProducts() {
+  public static function getBestSellingProducts() {
 
     $args = array(
       'post_type' => 'product',
@@ -34,7 +34,7 @@ class Products extends Controller {
     return $response;
   }
 
-  public function getProducts() {
+  public static function getProducts() {
       $args = array(
         'post_type'      => 'product',
         'posts_per_page' => 10,
@@ -52,7 +52,7 @@ class Products extends Controller {
   }
 
   // Shorten Product title if its too long
-  public function getExcerptForProductTitle($title) {
+  public static function getExcerptForProductTitle($title) {
     $excerpt = $title;
     // $excerpt = preg_replace(" ([*])",'',$excerpt);
     $excerpt = strip_shortcodes($excerpt);
